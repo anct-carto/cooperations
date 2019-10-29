@@ -57,13 +57,13 @@
 				
 				<!-- Contenu de la fiche d'information sur les territoires -->
 				<div class="divTable" id="popup">
-					<div class="" id="libgeo"></div>
 					
-					<div class="divTableBody">
-						<div class="divTableCell">
-								<h3 class="divTableRow">Liste des coopérations dans lequel ce territoire est impliqué :</h3>
-								<div class="divTableRow description" id="liste_cooperations"></div>
-						</div>
+					<h3 class="divTableRow">Territoire</h3>
+					<h2 class="territoire" id="libgeo"></h2>
+					
+					<div class="">
+						<h3 class="">Liste des coopérations dans lequel ce territoire est impliqué&nbsp;:</h3>
+						<div class="description cooperation" id="liste_cooperations"></div>
 						
 						<div class="retour"><img src='img/fleche.png' style='vertical-align:middle; width:20px; padding:0px 15px;'  />Retour</div>
 					</div>	
@@ -71,28 +71,29 @@
 				
 				<!-- Contenu de la fiche d'information sur les coopérations -->
 				<div class="divTable" id="coop">
-					<div class=""></div>
-					<div class="" id="nom_coop"></div>
+					
+					<h3 class="divTableRow">Coopération</h3>
+					<h2 class="cooperation" id="nom_coop"></h2>
 					
 					<div class="divTableBody">
 						<div class="divTableCell">
 								<h3 class="divTableRow">Objectifs de la coopération</h3>
-								<div class="divTableRow chiffre" id="objectif"></div>
+								<div class="divTableRow description" id="objectif"></div>
 						</div>
 						
 						<div class="divTableCell">
 								<h3 class="divTableRow">Thématiques</h3>
-								<div class="divTableRow chiffre" id="thematiques"></div>
+								<div class="divTableRow description" id="thematiques"></div>
 						</div>
 						
 						<div class="divTableCell">
 								<h3 class="divTableRow">liste des territoires impliqués dans la coopération annoncés dans le tableau</h3>
-								<div class="divTableRow chiffre" id="territoires"></div>
+								<div class="divTableRow description" id="territoires"></div>
 						</div>
 						
 						<div class="divTableCell">
 								<h3 class="divTableRow">liste des territoires impliqués dans la coopération</h3>
-								<div class="divTableRow chiffre" id="liste_territoires"></div>
+								<div class="divTableRow description territoire" id="liste_territoires"></div>
 						</div>
 						
 						<div class="retour"><img src='img/fleche.png' style='vertical-align:middle; width:20px; padding:0px 15px;'  />Retour</div>
@@ -147,8 +148,8 @@
 		function getColor() {
 			couleur = randomColor({ 
 				hue : 'blue' ,
-				luminosity: 'bright', //bright light dark
-				format: 'rgba' // rgb rgba rgbArray hsl hsla hslArray hex
+				luminosity: 'dark', //bright light dark
+				format: 'hex' // rgb rgba rgbArray hsl hsla hslArray hex
 				});
 			return couleur;
 		}
@@ -215,7 +216,7 @@
 			//filter: function(feature, layer) {return feature.properties.type=="départemen"},
 			style: function(feature){return { color: "white", weight: 0.5, opacity: 0.9, fillOpacity: 1, pane: "metro", fillColor: getColor(feature.properties.id_nom)};},
 			onEachFeature: function(feature, layer) {		
-				layer.bindTooltip(feature.properties.nom_maille, {className: 'Tooltips', direction: "center"});
+				layer.bindTooltip(feature.properties.nom_maille, {className: 'TooltipsTerr Tooltips', direction: "center"});
 				layer.on('click', function(e) {	
 					popup(feature.properties); 
 					metropoleCible(e.target._latlngs);
@@ -269,8 +270,8 @@
 		var metCibHover = [];
 		function metropoleCibleHover(e, type){ 
 			if(metCibHover) {map.removeLayer(metCibHover);}
-			if (type == 'objet'){metCibHover = L.polygon(e._latlngs, {fillOpacity: 0.9, fillColor: 'yellow', interactive:false, color: 'yellow',pane: "metCible", weight:1.5}).addTo(map);}
-			else if (type == 'xy'){ metCibHover = L.polygon(e, {fillOpacity: 0.9, fillColor: 'yellow', interactive:false, color: 'yellow',pane: "metCible", weight:1.5}).addTo(map);}
+			if (type == 'objet'){metCibHover = L.polygon(e._latlngs, {fillOpacity: 0.7, fillColor: 'yellow', interactive:false, color: 'white',pane: "metCible", weight:2}).addTo(map);}
+			else if (type == 'xy'){ metCibHover = L.polygon(e, {fillOpacity: 0.7, fillColor: 'yellow', interactive:false, color: 'white',pane: "metCible", weight:2}).addTo(map);}
 			//terrImpliques(e.feature.properties.id_terr);
 		}
 		
@@ -307,7 +308,7 @@
 			//Lire la table des correspondances pour tirer la liste des coopérations dans lesquelles le territoire est impliqué
 			for (var i = 0; i < listeTerrCoop.length; i++) {
 				if (e == listeTerrCoop[i].id_coop) {
-					polygon = new L.polygon(returnCoords(listeTerrCoop[i].id_territoire), {fillOpacity: 0.7, fillColor: '#fffbdc', interactive:false, pane: "metCible", weight:0.1});
+					polygon = new L.polygon(returnCoords(listeTerrCoop[i].id_territoire), {fillOpacity: 0.5, fillColor: '#8a2655', interactive:false, pane: "metCible", weight:0.2, color: 'white'});
 					polygon.addTo(terrLayer);
 				}
 				terrLayer.addTo(map);
@@ -332,14 +333,15 @@
 				}
 				if(type=="thin"){
 					polylineCoopThin.clearLayers();
-					polyline[e] = L.polyline(centroidArray, {color: 'red', weight:1.5, pane: "lines"});
+					polyline[e] = L.polyline(centroidArray, {color: '#8a2655', weight:2, opacity:0.7, pane: "lines"});
 					polyline[e].addTo(polylineCoopThin);	
 					}
 				else if (type=="heavy"){
 					polylineCoopHeavy.clearLayers();
-					polyline[e] = L.polyline(centroidArray, {color: 'red', weight:2.5, pane: "lines"});
+					polyline[e] = L.polyline(centroidArray, {color: '#8a2655', weight:3, pane: "lines"});
 					polyline[e].addTo(polylineCoopHeavy);
 					polyline[e].on('click', function(){showCoop(e);});
+					polyline[e].bindTooltip(returnCoopObject(e).nom_coop, {className: 'TooltipsCoop Tooltips', direction: "center", sticky: "true"});
 					}
 				polyline[e].properties = {};
 				polyline[e].properties.id_coop = e;
@@ -359,10 +361,11 @@
 			document.getElementById('popup').style.display = "block";
 			document.getElementById('defaut').style.display = "none";
 			document.getElementById('coop').style.display = "none";
+			polylineCoopHeavy.clearLayers();
 			
 			//Remplissage de la popup
 				//Infos sur le territoire
-				document.getElementById('libgeo').innerHTML = "<h2>"+e.nom_maille+"</h2>";	
+				document.getElementById('libgeo').innerHTML = e.nom_maille;	
 			
 			//Liste des coopérations
 				document.getElementById('liste_cooperations').innerHTML = "<div>";
@@ -370,7 +373,7 @@
 				
 					if(e.id_terr == listeTerrCoop[i].id_territoire){
 						document.getElementById("liste_cooperations").innerHTML +=
-							"<div class='liste'" +
+							"<div class='liste	'" +
 							"onclick='showCoop(\"" +listeTerrCoop[i].id_coop+"\"); drawLines(\""+listeTerrCoop[i].id_coop+"\", \"heavy\");'" +
 							"onmouseover='drawLines(\""+listeTerrCoop[i].id_coop+"\", \"thin\"); terrImpliques(\""+listeTerrCoop[i].id_coop+"\")'" +
 							"onmouseout='polylineCoopThin.clearLayers(); terrLayer.clearLayers();'>" +
@@ -390,10 +393,10 @@
 			if(metCibHover) {map.removeLayer(metCibHover);}
 			
 			//Infos sur la coopération
-			document.getElementById('nom_coop').innerHTML = "<h2>"+jointure(e,'terr-coop','nom_coop')+"</h2>";
-			document.getElementById('objectif').innerHTML = "<span>"+jointure(e,'terr-coop','objectif')+"</span>";
-			document.getElementById('thematiques').innerHTML = "<span>"+jointure(e,'terr-coop','thematique')+"</span>";
-			document.getElementById('territoires').innerHTML = "<span>"+jointure(e,'terr-coop','liste_territoire')+"</span>";
+			document.getElementById('nom_coop').innerHTML = jointure(e,'terr-coop','nom_coop');
+			document.getElementById('objectif').innerHTML = jointure(e,'terr-coop','objectif');
+			document.getElementById('thematiques').innerHTML = jointure(e,'terr-coop','thematique');
+			document.getElementById('territoires').innerHTML = jointure(e,'terr-coop','liste_territoire');
 			
 			//Liste des territoires impliqués
 				document.getElementById('liste_territoires').innerHTML = "<div>";
