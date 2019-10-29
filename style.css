@@ -1,0 +1,275 @@
+body {
+	padding: 0;
+	margin:0;
+	}
+
+html, body, #mapid {
+    height: 100%;
+	font-family: 'Asap', sans-serif;
+	}
+	
+a {
+	text-decoration:none;
+	color:white;
+	}
+	
+a:hover {
+	color: #657eb6;
+	}
+	
+.hyperlien {
+	color:white;
+	border-radius:4px;
+}
+	
+.hyperlien:hover {
+	color: #657eb6;
+	background-color: yellow;
+	border-radius:4px;
+}
+
+.download {
+	color:white;
+	padding:2px;
+	border-radius:4px;
+	font-style: italic;
+	font-weight: bold;
+	font-size:0.9em;
+	line-height:12px;
+}
+
+.downloadCell{
+	background-color: #849bc5;
+}
+
+.download:hover{
+	background-color: yellow;
+	border-radius:4px;
+}
+
+i {
+	font-size:0.9em;
+	font-style: italic;	
+	}
+	
+strong {
+	font-weight: bold;
+	}
+	
+span {
+	color: white;
+	font-size:1em;
+}
+		
+h1{
+	font-size:1.5em;
+	text-transform:uppercase;
+	color: white;
+	}
+	
+h2{
+	font-size:1.6em;
+	font-weight: bold;
+	color: #3b4358;
+}
+
+h3{
+	font-size:0.9em;
+	font-weight: bold;
+	color: #3b4358;
+	line-height:25px;
+}
+
+.presentation {
+	color: #3b4358;
+	line-height: 1.1em;
+	padding-top:10px;
+}
+
+.paragraphe {
+	padding-left:10px;
+	font-size:0.9em;
+	line-height: 1em;
+}
+	
+.leaflet-left {
+	left: 0;
+	}	
+	
+.fas {
+  color : white;
+}
+
+.description {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #ffffff;
+}
+	
+#sources {
+	margin-top:50px;
+	font-size:0.8em;
+	}
+
+.Tooltips {
+	font-size:1.2em;
+	padding:0 3px;
+	border:none;
+	font-weight: bold;	
+	margin: -25px 0px;
+	}
+
+.Tooltipsmarseille {background-color: #ff3298;color:white;}	
+.Tooltipsbordeaux {background-color: #e50072;color:white;}	
+.Tooltipsparis {background-color: #ff7fbf;color:#2a2a2a;}	
+.Tooltipsbrest {background-color: #9a008b;color:white;}	
+.Tooltipsclermont {background-color: #8ed5f0;color:#2a2a2a;}	
+.Tooltipsdijon {background-color: #33b5e5;color:white;}	
+.Tooltipsstrasbourg {background-color: #3a57ff;color:white;}	
+.Tooltipsmetz {background-color: #bc93d1;color:#2a2a2a;}	
+.Tooltipsmontpellier {background-color: #aa66cc;color:#2a2a2a;}	
+.Tooltipslille {background-color: #9933cc;color:white;}	
+.Tooltipsgrenoble {background-color: #2c4c00;color:white;}	
+.Tooltipsnice {background-color: #99cc00;color:#2a2a2a;}	
+.Tooltipsrouen {background-color: #cc6c00;color:white;}	
+.Tooltipstoulon {background-color: #ffda2e;color:#2a2a2a;}	
+.Tooltipslyon {background-color: #ff7000;color:#2a2a2a;}	
+.Tooltipsnancy {background-color: #ffb2b2;color:#2a2a2a;}	
+.Tooltipsnantes {background-color: #ff7f7f;color:#2a2a2a;}	
+.Tooltipsorleans {background-color: #ff4444;color:white;}	
+.Tooltipsrennes {background-color: #669900;color:white;}	
+.Tooltipssaintetienne {background-color: #007299;color:white;}	
+.Tooltipstoulouse {background-color: #00a900;color:white;}	
+.Tooltipstours {background-color: #ce0000;color:white;}	
+
+.bas {
+	margin-top:50px;
+}
+
+.button_container {
+	margin:10px;
+	}
+	
+.bouton_telecharger {
+	background-color: #657eb6;
+	opacity:1;
+	width:100%;
+	color: white;
+	font-weight: bold;
+	border-radius: 10px;
+	cursor:pointer;
+	padding:5px;
+	font-size:0.9em;
+}
+
+.bouton_telecharger:hover {
+	background-color: yellow;
+	color: #657eb6;
+}
+
+.bouton_telecharger:hover a {
+	color: #657eb6;
+}
+
+#lien:hover {
+	color: #657eb6;
+}
+
+	/*Affichage des onglets*/	
+		
+#popup {
+	display: none;
+	}
+	
+#coop {
+	display: none;
+	}
+	
+#defaut {
+	display: block;
+	}
+	
+.onglets{
+	background-color: #3b4358;
+}
+
+
+.onglets:hover {
+	color: #657eb6;
+	background-color: yellow;
+}
+
+.onglets_on a{
+	background-color: #f26664;
+	border : 0.1px solid #5a6687;
+}
+
+.retour {
+	cursor:pointer;	
+	margin-top:15px;
+	padding:5px;
+		}
+		
+.retour:hover {
+	color: #657eb6;
+	background-color: yellow;
+	border-radius:4px;
+	
+	}
+
+/*Style du tableau*/
+	
+.divTable{
+	display: table;
+	
+}
+
+
+.divTableRow {
+	display: table-row;	
+}
+
+.divTableCell, .divTableHead {
+	border: 1px solid rgba(255,255,255,0.5);
+	vertical-align:middle;
+	padding: 7px 8px;
+}
+
+.divTableBody {
+	display: table-row-group;
+}
+
+.chiffre{
+	font-size:1.3em;
+	font-weight: bold;
+	color:#f26664;
+}
+
+.liste{
+	cursor:pointer;
+}
+
+.liste:hover {
+	color:yellow;
+}
+
+.ptichiffre{
+	font-size:0.8em;
+	font-weight: bold;
+	color:#f26664;
+}
+
+#tip {
+	display:none;
+	font-size:0.9em;
+    position: absolute;
+	top: 30%;
+	left: 40%;
+	background-color: rgba(208,216,233,0.97);
+	width:400px;
+	z-index: 3000;
+	text-align:center;
+	padding:10px;
+	border-radius:20px;
+}
+

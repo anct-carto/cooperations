@@ -1,0 +1,42 @@
+[
+  {
+    "id_coop": "bordeaux1",
+    "nom_coop": "Bordeaux-Angoulême",
+    "objectif": "Anticiper et accompagner les changements qui s'opèrent, créer un cadre de discussion, favoriser les rapprochements et les synergies",
+    "thematique": "Culture, Innovation, Développement économique",
+    "theme_dom": "Culture",
+    "liste_territoire": "Angoulême"
+  },
+  {
+    "id_coop": "bordeaux2",
+    "nom_coop": "Bordeaux Métropole - Communauté d'agglomération du Libournais",
+    "objectif": "Anticiper et accompagner les changements qui s'opèrent, créer un cadre de discussion, favoriser les rapprochements et les synergies",
+    "thematique": "Accueil des mobilité des populations, Développement économique et touristique, Approvisionnement en circuits courts et valorisation des ressources locales",
+    "theme_dom": "Développement durable",
+    "liste_territoire": "Communauté d'agglomération du Libournais"
+  },
+  {
+    "id_coop": "bordeaux3",
+    "nom_coop": "Bordeaux Métropole - Val de Garonne Agglomération",
+    "objectif": "Anticiper et accompagner les changements qui s'opèrent, créer un cadre de discussion, favoriser les rapprochements et les synergies",
+    "thematique": "Gouvernance et logistique alimentaires durables, Mobilité, Attractivité et rayonnement territorial, Transition énergétique territoriale",
+    "theme_dom": "Développement durable",
+    "liste_territoire": "Agglomération de Val de Garonne"
+  },
+  {
+    "id_coop": "bordeaux4",
+    "nom_coop": "Bordeaux Métropole - Ville de Saintes",
+    "objectif": "Anticiper et accompagner les changements qui s'opèrent, créer un cadre de discussion, favoriser les rapprochements et les synergies",
+    "thematique": "Attractivité, Culture et patrimoine",
+    "theme_dom": "Culture et patrimoine",
+    "liste_territoire": "Ville de Saintes"
+  },
+  {
+    "id_coop": "bordeaux5",
+    "nom_coop": "interSCoT Girondin",
+    "objectif": "Identifier entre territoires de SCoT, la Métropole bordelaise, le Département et l'Etat, les grands enjeux collectifs d'aménagement et de développement durable du territoire girondin, et exprimer des engagements stratégiques autour de cette vision partagée",
+    "thematique": "Ingénierie / stratégie territoriale",
+    "theme_dom": "Stratégie territoriale",
+    "liste_territoire": "L'ensemble des SCOT :  8 EPCI"
+  }
+]

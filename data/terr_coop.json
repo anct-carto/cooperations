@@ -1,0 +1,70 @@
+[
+  {
+    "id_coop": "bordeaux1",
+    "id_territoire": "t0000"
+  },
+  {
+    "id_coop": "bordeaux1",
+    "id_territoire": "t0001"
+  },
+  {
+    "id_coop": "bordeaux2",
+    "id_territoire": "t0014"
+  },
+  {
+    "id_coop": "bordeaux2",
+    "id_territoire": "t0013"
+  },
+  {
+    "id_coop": "bordeaux3",
+    "id_territoire": "t0014"
+  },
+  {
+    "id_coop": "bordeaux3",
+    "id_territoire": "t0012"
+  },
+  {
+    "id_coop": "bordeaux4",
+    "id_territoire": "t0014"
+  },
+  {
+    "id_coop": "bordeaux4",
+    "id_territoire": "t0002"
+  },
+  {
+    "id_coop": "bordeaux5",
+    "id_territoire": "t0003"
+  },
+  {
+    "id_coop": "bordeaux5",
+    "id_territoire": "t0004"
+  },
+  {
+    "id_coop": "bordeaux5",
+    "id_territoire": "t0005"
+  },
+  {
+    "id_coop": "bordeaux5",
+    "id_territoire": "t0006"
+  },
+  {
+    "id_coop": "bordeaux5",
+    "id_territoire": "t0007"
+  },
+  {
+    "id_coop": "bordeaux5",
+    "id_territoire": "t0008"
+  },
+  {
+    "id_coop": "bordeaux5",
+    "id_territoire": "t0009"
+  },
+  {
+    "id_coop": "bordeaux5",
+    "id_territoire": "t0010"
+  },
+  {
+    "id_coop": "bordeaux5",
+    "id_territoire": "t0011"
+  }
+]
