@@ -1,0 +1,67 @@
+#menu_themes, #menu_themes ul{
+padding:0;
+margin:0;
+margin-bottom:15px;
+list-style:none;
+text-align:left;
+}
+#menu_themes li{
+display:inline-block;
+position:relative;
+border-radius:1px;
+}
+#menu_themes ul li{
+display:inherit;
+
+}
+#menu_themes ul li:hover{
+
+}
+
+#menu_themes ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .2s all .1s;
+-webkit-transition: .2s all .1s;
+transition: .2s all .1s;
+}
+#menu_themes li:hover ul{
+max-height:10em;
+}
+/* background des liens menus */
+#menu_themes li{
+background-color: #657eb6;
+}
+
+/* background des liens sous menus */
+#menu_themes li li{
+background:#657eb6;
+}
+
+/* background des liens menus et sous menus au survol */
+#menu_themes li:hover, #menu_themes li li:hover{
+background:#e1ff2f;
+}
+
+/* les a href */
+#menu_themes a{
+text-decoration:none;
+display:block;
+padding:8px 32px;
+color:#fff;
+font-family:arial;
+}
+#menu_themes ul a{
+padding:8px 0;
+}
+#menu_themes li:hover li a{
+color:#fff;
+text-transform:inherit;
+}
+#menu_themes li:hover a, #menu_themes li li:hover a{
+color:#3b4358;
+}

@@ -1,0 +1,39 @@
+#menu_themes, #menu_themes ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+#menu_themes {
+    text-align: left;
+	margin-bottom: 15px;
+	border: 1px solid black;
+	background-color: white;
+	padding: 5px;
+}
+#menu_themes li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+	background-color: white;
+	padding: 15px;
+}
+#menu_themes ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+#menu_themes a {
+    text-decoration: none;
+    display: block;
+	color:#000;
+}
+#menu_themes ul {
+    position: absolute;
+/* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+	
+}
+#menu_themes li:hover ul {
+/* Au survol des li du menu on replace les sous menus */
+    left: auto;
+}
