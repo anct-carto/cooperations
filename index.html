@@ -57,19 +57,28 @@
 				<!-- Page d'accueil -->
 				<div class="presentation" id="defaut">
 					
+					<div onclick="test();">appui</div>
 					
-					
-					<div class="divTableCell">
+					<div class="divTableCell"  >
 						<h3 class="">Rechercher une coopération ou un territoire par son nom&nbsp;:</h3>
 						<div id="boiteRecherche"></div>
+						<h3 class=""></br></br></h3>
+						
 					</div>
 					
 					<div class="divTableCell">
-					<h3 class="">Filtrer les coopérations par thème&nbsp;:</h3>
-					<ul id="menu_themes">
-						<li><a id="selectionner">Tous les thèmes</a>
+					<h3 class="">Filtrer les coopérations&nbsp;:</h3>
+					<ul id="menu_themes" class="menu">
+						<li><a id="selectionner_theme">Tous les thèmes</a><span><i class="fa fa-caret-down" style="font-size:1.2em;"></i></span>
 							<ul id="liste_themes">
-									<li onClick='filtre("tt")'><a>Tous les thèmes</a></li>
+									
+							</ul>
+						</li>	
+					</ul>
+					<ul id="menu_modalites" class="menu">
+						<li><a id="selectionner_modalite">Toutes les modalités</a><span><i class="fa fa-caret-down" style="font-size:1.2em;"></i></span>
+							<ul id="liste_modalites">
+									
 							</ul>
 						</li>
 					</ul>
@@ -80,10 +89,7 @@
 					<div class="description cooperation" id="liste_toutes_cooperations"></div>
 					</div>
 					
-					<div id="sources" style="width:100%;">
-						<p><i>Sources des données&nbsp;: <a href="https://www.cget.gouv.fr/territoires/metropoles" class="hyperlien" target="_blank">CGET, Direction des stratégories territoriales,</a> • Réalisation&nbsp;: bureau de la prospective et des études, <a href="https://cartotheque.cget.gouv.fr/cartes?filters%5Bquery%5D=interactif&current_page=1&category=&page_size=20" class="hyperlien" target="_blank">CGET service cartographie</a></i></p>
-						<p><img src="img/cget.png" style="vertical-align:middle; width:70%;"/></p>
-					</div>
+					
 				</div>
 				
 				<!-- Contenu de la fiche d'information sur les territoires -->
@@ -122,11 +128,6 @@
 								<div class="divTableRow description" id="modalite"></div>
 						</div>
 						
-						<!--<div class="divTableCell">
-								<h3 class="divTableRow">liste des territoires impliqués dans la coopération annoncés dans le tableau</h3>
-								<div class="divTableRow description" id="territoires"></div>
-						</div>-->
-						
 						<div class="divTableCell">
 								<h3 class="divTableRow">liste des territoires impliqués dans la coopération</h3>
 								<div class="divTableRow description territoire" id="liste_territoires"></div>
@@ -141,21 +142,21 @@
 				<div class="divTable" id="divInfos">
 					
 					<div>
-						<p>Bienvenue sur la carte interactive des coopérations interterritoriales* proposée par le CGET, en lien avec France urbaine, l’AdCF, l’ANPP, l’AMRF, la FNAU et Villes de France**.</p>
-						<p>Chaque coopération interterritoriale est décrite - objectifs, thématiques, modalités (ex : contrat de réciprocité, pôle métropolitain, syndicat mixte, entente, etc.) – et des documents ressources sont téléchargeables (monographies, interviews, etc.).</p>
+						<p><strong>Bienvenue sur la carte interactive des coopérations interterritoriales*</strong> proposée par le CGET, en lien avec France urbaine, l’AdCF, l’ANPP, l’AMRF, la FNAU et Villes de France**.</p>
+						<p>Chaque coopération interterritoriale est décrite - <strong>objectifs, thématiques, modalités</strong> (ex : contrat de réciprocité, pôle métropolitain, syndicat mixte, entente, etc.) – et des documents ressources sont téléchargeables (monographies, interviews, etc.).</p>
 						<p>La navigation est double :</p>
 						<p>cliquez sur un territoire et accédez aux coopérations dans lesquelles il est engagé ; </p>
 						<p>cliquez sur une coopération et identifiez les territoires qui y sont engagés. </p>
-						<p>Un module de recherche vous permet d’accéder à toutes les coopérations recensées par thématique et par modalité.</p>
+						<p>Un module de recherche vous permet d’<strong>accéder à toutes les coopérations recensées par thématique et par modalité.</strong></p>
 						<p>N’hésitez pas à nous contacter pour que votre coopération interterritoriale figure sur la carte interactive.</p>
 						<p>Bonne navigation !</p>
-						<p>(*)= on entend par « coopérations interterritoriales » l’ensemble des démarches volontaires de plusieurs territoires visant à porter des projets et des actions en commun, par exemple sous forme d’ ententes, associations, contrats de réciprocité, autres contrats et conventions, pôles métropolitains, syndicats mixtes, GIP, SPL, SEM, etc. Elles se distinguent des coopérations au sein du bloc local (pays, PETR, EPCI etc.). </p>
+						<p><i>(*)= on entend par « coopérations interterritoriales » l’ensemble des démarches volontaires de plusieurs territoires visant à porter des projets et des actions en commun, par exemple sous forme d’ ententes, associations, contrats de réciprocité, autres contrats et conventions, pôles métropolitains, syndicats mixtes, GIP, SPL, SEM, etc. Elles se distinguent des coopérations au sein du bloc local (pays, PETR, EPCI etc.). </i></p>
 					</div>
 					
-					<h2>Les objectifs du portail des coopérations interterritoriales</h2>
-					<p>Le recensement des coopérations entre les Métropoles et les territoires environnants, réalisé en mars 2019, a permis d’établir que ces coopérations sont une réalité, sur l’ensemble du territoire national. Il apparaît maintenant nécessaire de <strong>donner à voir ces coopérations, de manière  quantitative et qualitative</strong>, mais aussi <strong>d’étendre le spectre</strong> de manière à inclure toutes les coopérations interterritoriales, bien au-delà des coopérations impliquant des Métropoles.</p>
-					<p>Il s’agit également <strong>d’animer une « communauté d’acteurs »</strong>, porteurs de coopérations interterritoriales ou promoteurs de ces démarches, et de <strong>faciliter les échanges entre eux.</strong></p>
-					<p>Enfin, <strong>outiller</strong> les acteurs sur le plan des données et plus largement de <strong>l’observation des dynamiques interterritoriales</strong> se dégage comme un enjeu fort. Si des travaux existent d’ores et déjà en la matière, produits notamment par les agences d’urbanisme, certains flux et échanges entre les territoires sont encore peu documentés, mesurés, or des données existent et des méthodes d’analyse de celles-ci se développent.</p>
+					<div id="sources" style="width:100%;">
+						<p><i>Sources des données&nbsp;: <a href="https://www.cget.gouv.fr/territoires/metropoles" class="hyperlien" target="_blank">CGET, Direction des stratégories territoriales,</a> • Réalisation&nbsp;: bureau de la prospective et des études, <a href="https://cartotheque.cget.gouv.fr/cartes?filters%5Bquery%5D=interactif&current_page=1&category=&page_size=20" class="hyperlien" target="_blank">CGET service cartographie</a></i></p>
+						<p><img src="img/cget.png" style="vertical-align:middle; width:70%;"/></p>
+					</div>
 					
 					<div class="retour"><img src='img/fleche.png' style='vertical-align:middle; width:20px; padding:0px 15px;'  />Retour</div>
 				
@@ -186,6 +187,7 @@
 	<script type="text/javascript" src="data/masque.js"></script>
 	<script type="text/javascript" src="data/toutesCouches_gen.js"></script>
 	<script type="text/javascript" src="data/cercles_drom.js"></script>
+	<script type="text/javascript" src="data/chef_lieu.js"></script>
     
 	<script>
 			
@@ -204,8 +206,9 @@
 		var delay = 200;
 		var prevent = false;
 		
-		//variables globales
-		var theme;
+		//Definitions variables globales
+		var theme = "th00"; 
+		var modalite = "m000";
 		
 /* COULEURS - STYLES - LEGENDE */
 		
@@ -232,14 +235,18 @@
 		map.getPane('contour').style.zIndex = 500;
 		map.createPane('cercles');
 		map.getPane('cercles').style.zIndex = 510;
-		map.createPane('metro');
-		map.getPane('metro').style.zIndex = 520;
+		map.createPane('cooperations');
+		map.getPane('cooperations').style.zIndex = 520;
+		map.createPane('territoires');
+		map.getPane('territoires').style.zIndex = 523;
 		map.createPane('metCible2');
-		map.getPane('metCible2').style.zIndex = 525;
+		map.getPane('metCible2').style.zIndex = 530;
 		map.createPane('metCible');
-		map.getPane('metCible').style.zIndex = 530;
+		map.getPane('metCible').style.zIndex = 540;
 		map.createPane('lines');
-		map.getPane('lines').style.zIndex = 535;
+		map.getPane('lines').style.zIndex = 550;
+		map.createPane('labels');
+		map.getPane('labels').style.zIndex = 560;
 		
 		
 		//Couches du fond de carte
@@ -253,37 +260,56 @@
 		
 		Contour_Regions = L.geoJSON(JS_tout, {
 			filter: function(feature, layer) {return feature.properties.type=="région"},
-			style : {color: "#ffffff", weight: 1.3, opacity: 1, fillOpacity: 0, pane: "contour"}
+			style : {color: "#ffffff", weight: 1.3, opacity: 0.5, fillOpacity: 0, pane: "contour"}
 			}).addTo(map);
 		
 		Departements = L.geoJSON(JS_tout, {
 			filter: function(feature, layer) {return feature.properties.type=="départemen"},
-			style: {color: "#ffffff", weight: 0.5, opacity: 1, fillOpacity: 0, pane: "contour"}
+			style: {color: "#ffffff", weight: 0.5, opacity: 0.5, fillOpacity: 0, pane: "contour"}
 			}).addTo(map);
 		
-		ZAU = L.geoJSON(JS_tout, {
-			filter: function(feature, layer) {return feature.properties.type=="zau"},
-			style: function(feature){
-				if (feature.properties.codgeo=="120"){
-					return {opacity: 1, fillOpacity: 1, weight: 0, color:"#cccccc", pane: "fond"};
-				}
-				else if (feature.properties.codgeo=="112"){
-					return {opacity: 1, fillOpacity: 1, weight: 0, color:"#bfbfbf", pane: "fond"};
-				}
-				else if (feature.properties.codgeo=="111"){
-					return {opacity: 1, fillOpacity: 1, weight: 0, color:"#aeaeae", pane: "fond"};
-				}
-				else {
-					return {opacity: 1, fillOpacity: 1, weight: 0, color:"#d4d4d4", pane: "fond"};
-				}
-			}
+		//Création des labels
+		var createLabelIcon = function(labelClass,labelText){
+		return L.divIcon({ 
+		className: labelClass,
+		html: labelText
 		})
-		//.addTo(map);
+		}
+		
+		//Label Regions
+		labelsReg = L.geoJSON(JS_chef_lieu, {
+				pointToLayer: function(feature, latlng) {
+					return L.marker(latlng,{icon:createLabelIcon("labelClassReg", feature.properties.libgeom),pane:'labels', interactive: false})
+				},
+				filter : function(feature, layer) {
+                return feature.properties.STATUT == "région";
+				}		
+		}).addTo(map)
+		
+		//Label Departements
+		labelsDep = L.geoJSON(JS_chef_lieu, {
+				pointToLayer: function(feature, latlng) {
+					return L.marker(latlng,{icon:createLabelIcon("labelClassDep", feature.properties.libgeom),pane:'labels', interactive: false})
+				},
+				filter : function(feature, layer) {
+                return feature.properties.STATUT == "département";
+				}		
+		})
+		
+		//Label Canton
+		labelsCan = L.geoJSON(JS_chef_lieu, {
+				pointToLayer: function(feature, latlng) {
+					return L.marker(latlng,{icon:createLabelIcon("labelClassCan", feature.properties.libgeom),pane:'labels', interactive: false})
+				},
+				filter : function(feature, layer) {
+                return feature.properties.STATUT == "sous-prefecture";
+				}		
+		})
 		
 		//Territoires
 		Territoires = L.geoJSON(JS_territoires, {
 			//filter: function(feature, layer) {return feature.properties.type=="départemen"},
-			style: function(feature){return { color: "white", weight: 0.5, opacity: 0.9, fillOpacity: 1, pane: "metro", fillColor: getColor("territoire")};},
+			style: function(feature){return { color: "white", weight: 0.5, opacity: 0.5, fillOpacity: 0, pane: "territoires", interactive:false, fillColor: getColor("territoire")};},
 			onEachFeature: function(feature, layer) {		
 				layer.bindTooltip(feature.properties.nom, {className: 'TooltipsTerr Tooltips', direction: "center", sticky:true});
 				layer.on('click', function(e) {	
@@ -301,11 +327,15 @@
 					});	
 				}
 			})
-			//.addTo(map);
-			
+			.addTo(map);
+		
+
+		var coopLayer = new L.layerGroup();
+		coopLayer.addTo(map);
+		
 		//Cooperations
 		Cooperations = L.geoJSON(JS_cooperations, {
-			style: function(feature){return { color: "white", weight: 0.5, opacity: 0.7, fillOpacity: 1, pane: "metro", fillColor: getColor("cooperation")};},
+			style: function(feature){return { color: getColor("cooperation"), weight: 2.5, opacity: 1, fillOpacity: 1, pane: "cooperations", fillColor: getColor("cooperation")};},
 			onEachFeature: function(feature, layer) {		
 				layer.bindTooltip(feature.properties.nom, {className: 'TooltipsCoop Tooltips', direction: "center", sticky:true});
 				layer.on('click', function(e) {	
@@ -316,14 +346,15 @@
 					});	
 				layer.on('mouseover', function(e) {	
 					geometrieCibleHover(e.target, 'objet', "cooperation"); 
-					console.log(feature.properties.nom);
 					});	
 				layer.on('mouseout', function(e) {	
 					if(metCibHover) {map.removeLayer(metCibHover);}
 					terrLayer.clearLayers();
 					});	
+				layer.addTo(coopLayer);
 				}
-			}).addTo(map);
+			})
+			//.addTo(map);
 		
 		//Aller chercher le tableau des correspondances
 		var listeTerrCoop = [];
@@ -345,7 +376,7 @@
 				listeCooperations.push(JS_cooperations.features[i].properties.nom);
 				document.getElementById("liste_toutes_cooperations").innerHTML +=
 					"<div class='liste'" +
-					"onClick='showFiche(\""+JS_cooperations.features[i].properties.id_coop+"\", \"cooperation\"); drawLines(\""+JS_cooperations.features[i].properties.id_coop+"\", \"heavy\"); polylineCoopHeavy.clearLayers();'" +
+					"onClick='map.flyToBounds(returnCoordsCoop(\""+JS_cooperations.features[i].properties.id_coop+"\"), {padding:[20,20]}); showFiche(\""+JS_cooperations.features[i].properties.id_coop+"\", \"cooperation\"); drawLines(\""+JS_cooperations.features[i].properties.id_coop+"\", \"heavy\"); polylineCoopHeavy.clearLayers();'" +
 					"onmouseover='drawLines(\""+JS_cooperations.features[i].properties.id_coop+"\", \"thin\"); terrImpliques(\""+JS_cooperations.features[i].properties.id_coop+"\")'" +
 					"onmouseout='polylineCoopThin.clearLayers(); terrLayer.clearLayers();'>" +
 					"&rarr; "+JS_cooperations.features[i].properties.nom+"</div>";
@@ -355,26 +386,46 @@
 		
 		//Aller chercher le tableau des thèmes et remplir le menu déroulant avec
 		var listeThemes = [];
-		function creerThemes(e) {
+		function creerThemes() {
 			listeThemes = [];
-			fetch("data/themes.json")
+			fetch("data/liste_themes.json")
 				.then(response=>response.json())
 				.then(response=>{
 					for (var i = 0; i < response.length; i++) {
 						listeThemes.push(response[i]);
-						document.getElementById("liste_themes").innerHTML += "<li onClick='filtre(\""+response[i].nom_theme+"\")'><a href='#'>"+response[i].nom_theme+"</a></li>";
+						document.getElementById("liste_themes").innerHTML +=
+										"<li onClick='filtre(\""+response[i].id_theme+"\", \""+modalite+"\");document.getElementById(\"selectionner_theme\").innerHTML = \""+response[i].nom_theme+"\";' >"+
+										"<a href='#'>"+response[i].nom_theme+"</a></li>";
 						}	
 					});
 		}
 		creerThemes();
+		
+		//Aller chercher le tableau des modalités et remplir le menu déroulant avec
+		var listeModalites = [];
+		function creerModalites() {
+			listeModalites = [];
+			fetch("data/liste_modalites.json")
+				.then(response=>response.json())
+				.then(response=>{
+					for (var i = 0; i < response.length; i++) {
+						listeModalites.push(response[i]);
+						document.getElementById("liste_modalites").innerHTML +=
+										"<li onClick='filtre(\""+theme+"\", \""+response[i].id_modalite+"\"); console.log(\""+theme+"\"); document.getElementById(\"selectionner_modalite\").innerHTML = \""+response[i].nom_modalite+"\";'>"+
+										"<a href='#'>"+response[i].nom_modalite+"</a></li>";
+						}	
+					});
+		}
+		creerModalites();
 		
 		//couches d'action de sélection
 		var metCib = [];
 		function geometrieCible(e, terrcoop){ 
 			if(metCib) {map.removeLayer(metCib);}
 			var fillColor;
-			if (terrcoop == "territoire"){fillColor="purple"} else if (terrcoop == "cooperation"){fillColor="yellow"}
+			if (terrcoop == "territoire"){fillColor="green"} else if (terrcoop == "cooperation"){fillColor="yellow"};
 			metCib = L.polygon(e, {interactive:false, opacity: 1, fillOpacity: 0.8, fillColor: fillColor, weight: 1, color: '#333333', pane: "metCible2"}).addTo(map);
+			console.log(metCib);
 		}
 		
 		var metCibHover = [];
@@ -426,7 +477,7 @@
 					polyline[e] = L.polyline(centroidArray, {color:"red", weight:3, pane: "lines"});
 					polyline[e].addTo(polylineCoopHeavy);
 					polyline[e].on('click', function(){showCoop(e,"cooperation");});
-					polyline[e].bindTooltip(returnCoopObject(e).nom, {className: 'TooltipsCoop Tooltips', direction: "center", sticky: "true"});
+					//polyline[e].bindTooltip(returnCoopObject(e).nom, {className: 'TooltipsCoop Tooltips', direction: "center", sticky: "true"});
 					}
 				polyline[e].properties = {};
 				polyline[e].properties.id_coop = e;
@@ -453,19 +504,18 @@
 				document.getElementById('fiche_cooperation').style.display = "none";
 				//Remplissage de la popup
 					//Infos sur le territoire
-					document.getElementById('libgeo').innerHTML = e.nom;	
+					document.getElementById('libgeo').innerHTML = jointure(e, 'coop-terr', 'nom_terr');	
 				
 				//Liste des coopérations
 					document.getElementById('liste_cooperations').innerHTML = "<div>";
 					for (var i = 0; i < listeTerrCoop.length; i++) {
-						if(e.id_terr == listeTerrCoop[i].id_territoire){
+						if(e == listeTerrCoop[i].id_territoire){
 							document.getElementById("liste_cooperations").innerHTML +=
 								"<div class='liste	'" +
-								"onclick='showFiche(\"" +listeTerrCoop[i].id_coop+"\", \"cooperation\" ); drawLines(\""+listeTerrCoop[i].id_coop+"\", \"heavy\");'" +
+								"onclick='showFiche(\"" +listeTerrCoop[i].id_coop+"\", \"cooperation\" ); drawLines(\""+listeTerrCoop[i].id_coop+"\", \"heavy\"); geometrieCible(\"" +listeTerrCoop[i].id_coop+"\", \"cooperation\"); '" +
 								"onmouseover='drawLines(\""+listeTerrCoop[i].id_coop+"\", \"thin\"); terrImpliques(\""+listeTerrCoop[i].id_coop+"\")'" +
 								"onmouseout='polylineCoopThin.clearLayers(); terrLayer.clearLayers();'>" +
 								"&rarr; " + jointure(listeTerrCoop[i].id_coop, 'terr-coop' ,'nom') + "</div>" ;
-								//"&rarr; " + listeTerrCoop[i].id_coop + "</div>" ;
 						}
 					}
 					document.getElementById('liste_cooperations').innerHTML += "</div>";
@@ -485,32 +535,18 @@
 				//Liste des territoires impliqués
 				document.getElementById('liste_territoires').innerHTML = "<div>";
 				for (var i = 0; i < listeTerrCoop.length; i++) {
-					
 					if(e == listeTerrCoop[i].id_coop){
-						
 						document.getElementById("liste_territoires").innerHTML +=
 						"<div class='liste'" +
 						"onMouseover='geometrieCibleHover(returnCoords(\""+listeTerrCoop[i].id_territoire+"\"), \"xy\", \"territoire\");'" +
 						"onMouseout='map.removeLayer(metCibHover);'" +
-						"onclick='showTerr(\""+listeTerrCoop[i].id_territoire+"\");'>" +
+						"onclick='showFiche(\""+listeTerrCoop[i].id_territoire+"\", \"territoire\"); geometrieCible(returnCoords(\""+listeTerrCoop[i].id_territoire+"\"), \"territoire\"); '>" +
 						"&rarr; " + jointure(listeTerrCoop[i].id_territoire, 'coop-terr', 'nom_terr') +"</div>" ;
 					}
 				}
 				document.getElementById('liste_territoires').innerHTML += "</div>";
 			}
 		
-		}
-			
-		//Affiche la popup et sélectionne un territoire à partir de la liste dans la fiche des coopérations
-		var coordsSelect;
-		function showTerr(e) {
-			Territoires.eachLayer(function(layer){
-				if(e == layer.feature.properties.id_terr){
-					showFiche(layer.feature.properties, "territoire");
-				}
-			});
-			coordsSelect = returnCoords(e);
-			geometrieCible(coordsSelect);
 		}
 		
 		//crée le centroïde à partir de coordonnées latlngs
@@ -527,37 +563,79 @@
 	
 /* ACTIONS */
 		
+		function test() {
+			console.log(theme);
+		}
+		
 		// Filtre les coopérations en fonction du thème choisi
-		function filtre(e) {
+		function filtre(theme_choisi, modalite_choisie) {
+			//console.log("envoi : theme choisi "+theme_choisi+" - modalite choisie "+modalite_choisie);
 			polylineCoopHeavy.clearLayers();
 			document.getElementById("liste_toutes_cooperations").innerHTML = "";
-			theme = e;
-			if ( e == 'tt' ) {
-					for (var i = 0; i < listeCooperations.length; i++) {
-						drawLines(listeCooperations[i].id_coop,'heavy');
-						document.getElementById("liste_toutes_cooperations").innerHTML +=
-							"<li class='liste'" +
-							"onclick='showFiche(\"" +listeCooperations[i].id_coop+"\", \"cooperation\"); drawLines(\""+listeCooperations[i].id_coop+"\", \"heavy\");'" +
-							"onmouseover='drawLines(\""+listeCooperations[i].id_coop+"\", \"thin\"); terrImpliques(\""+listeCooperations[i].id_coop+"\")'" +
-							"onmouseout='polylineCoopThin.clearLayers(); terrLayer.clearLayers();'>" +
-							"&rarr; " + listeCooperations[i].nom + "</li>" ;
-					}
-					document.getElementById('selectionner').innerHTML = "Tous les thèmes";
+			
+			theme = theme_choisi;
+			//console.log ("theme"+theme);
+			modalite = modalite_choisie;
+			
+			coopLayer.clearLayers();
+			//console.log("avant boucle : theme "+theme+" - modalite "+modalite);
+			if ( theme == 'th00' ) {
+					if (modalite == 'm000') {
+						Cooperations.eachLayer(function(layer){
+								console.log(layer._latlngs);
+								document.getElementById("liste_toutes_cooperations").innerHTML +=
+									"<li class='liste'" +
+									"onclick='showFiche(\"" +layer.feature.properties.id_coop+"\", \"cooperation\"); drawLines(\""+layer.feature.properties.id_coop+"\", \"heavy\"); '" +
+									"onmouseover='drawLines(\""+layer.feature.properties.id_coop+"\", \"thin\"); terrImpliques(\""+layer.feature.properties.id_coop+"\")'" +
+									"onmouseout='polylineCoopThin.clearLayers(); terrLayer.clearLayers();'>" +
+									"&rarr; " + layer.feature.properties.nom + "</li>" ;
+								layer.addTo(coopLayer);
+							});
+						}
+					else {
+						//console.log("tous les themes : theme "+theme+" - modalite "+modalite);
+						Cooperations.eachLayer(function(layer){
+							if (layer.feature.properties.id_modalite == modalite) {
+								document.getElementById("liste_toutes_cooperations").innerHTML +=
+									"<li class='liste'" +
+									"onclick='showFiche(\"" +layer.feature.properties.id_coop+"\", \"cooperation\"); drawLines(\""+layer.feature.properties.id_coop+"\", \"heavy\");'" +
+									"onmouseover='drawLines(\""+layer.feature.properties.id_coop+"\", \"thin\"); terrImpliques(\""+layer.feature.properties.id_coop+"\")'" +
+									"onmouseout='polylineCoopThin.clearLayers(); terrLayer.clearLayers();'>" +
+									"&rarr; " + layer.feature.properties.nom + "</li>" ;
+								layer.addTo(coopLayer);
+								}
+							});
+						}
+				}		
+			else if (modalite == 'm000') {
+				Cooperations.eachLayer(function(layer){
+						if (layer.feature.properties.id_theme.includes(theme)) {
+							document.getElementById("liste_toutes_cooperations").innerHTML +=
+								"<li class='liste'" +
+								"onclick='showFiche(\"" +layer.feature.properties.id_coop+"\", \"cooperation\"); drawLines(\""+layer.feature.properties.id_coop+"\", \"heavy\");'" +
+								"onmouseover='drawLines(\""+layer.feature.properties.id_coop+"\", \"thin\"); terrImpliques(\""+layer.feature.properties.id_coop+"\")'" +
+								"onmouseout='polylineCoopThin.clearLayers(); terrLayer.clearLayers();'>" +
+								"&rarr; " + layer.feature.properties.nom + "</li>" ;
+							layer.addTo(coopLayer);
+							}
+					});
 				}
 			else {
-				for (var i = 0; i < listeCooperations.length; i++) {
-					if (listeCooperations[i].theme_dom.includes(e)) {
-						drawLines(listeCooperations[i].id_coop,'heavy');
+				//console.log("2 filtres : theme "+theme+" - modalite "+modalite);
+				Cooperations.eachLayer(function(layer){
+					if (layer.feature.properties.id_theme.includes(theme) && layer.feature.properties.id_modalite == modalite) {
 						document.getElementById("liste_toutes_cooperations").innerHTML +=
 							"<li class='liste'" +
-							"onclick='showFiche(\"" +listeCooperations[i].id_coop+"\", \"cooperation\"); drawLines(\""+listeCooperations[i].id_coop+"\", \"heavy\");'" +
-							"onmouseover='drawLines(\""+listeCooperations[i].id_coop+"\", \"thin\"); terrImpliques(\""+listeCooperations[i].id_coop+"\")'" +
+							"onclick='showFiche(\"" +layer.feature.properties.id_coop+"\", \"cooperation\"); drawLines(\""+layer.feature.properties.id_coop+"\", \"heavy\"); '" +
+							"onmouseover='drawLines(\""+layer.feature.properties.id_coop+"\", \"thin\"); terrImpliques(\""+layer.feature.properties.id_coop+"\")'" +
 							"onmouseout='polylineCoopThin.clearLayers(); terrLayer.clearLayers();'>" +
-							"&rarr; " + listeCooperations[i].nom + "</li>" ;						
-					}	
-				}	
-			document.getElementById('selectionner').innerHTML = e;
+							"&rarr; " + layer.feature.properties.nom + "</li>" ;
+						layer.addTo(coopLayer);
+					}
+				});
 			}
+
+		
 		}
 		
 		
@@ -566,6 +644,15 @@
 		function returnCoords(e) {
 			Territoires.eachLayer(function(layer){
 				if (layer.feature.properties.id_terr == e) {
+					coords = layer._latlngs;
+					}
+			});
+			return coords;
+		}
+		
+		function returnCoordsCoop(e) {
+			Cooperations.eachLayer(function(layer){
+				if (layer.feature.properties.id_coop == e) {
 					coords = layer._latlngs;
 					}
 			});
@@ -657,11 +744,19 @@
 			document.getElementById('defaut').style.display = "none";
 			document.getElementById('fiche_cooperation').style.display = "none";
 		});
+		
+		//Affichage des labels suivant le zoom
+		map.on('zoomend', function() {
+			var zoom = map.getZoom();
+			if (zoom < 8) {map.removeLayer(labelsDep); map.removeLayer(labelsCan);}
+			else if (zoom >= 8 && zoom < 9) { map.addLayer(labelsDep); map.removeLayer(labelsCan);}
+			else if (zoom >= 9) {map.addLayer(labelsDep);map.addLayer(labelsCan);}
+		});
 
 /* BARRES DE RECHERCHE */	
 		
 		//Barre de recherche n°1 (panneau latéral)
-		var Recherche = L.layerGroup([Territoires, Cooperations]);
+		var Recherche = L.layerGroup([Territoires, coopLayer]);
 		
 		var searchControl = new L.control.search({
 			layer: Recherche,
@@ -688,8 +783,6 @@
 		{newParent.appendChild(el);}
 		setParent(htmlObject, a);
 		
-		
-		
 		//Barre de recherche n°2 (en haut à droite)
 		var searchControl2 = new L.control.search({
 			layer: Recherche,
@@ -711,7 +804,7 @@
 		
 		map.addControl(searchControl2);	
 		
-		map.removeLayer(Territoires);
+		//map.removeLayer(Cooperations);
 		
    </script>
 	
