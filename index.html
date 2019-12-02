@@ -185,7 +185,7 @@
 	<script type="text/javascript" src="data/296territoires.js"></script>
 	<script type="text/javascript" src="data/125cooperations.js"></script>
 	<script type="text/javascript" src="data/masque.js"></script>
-	<script type="text/javascript" src="data/toutesCouches_gen.js"></script>
+	<script type="text/javascript" src="data/toutes_Couches.js"></script>
 	<script type="text/javascript" src="data/cercles_drom.js"></script>
 	<script type="text/javascript" src="data/chef_lieu.js"></script>
     
@@ -238,11 +238,11 @@
 		map.createPane('cooperations');
 		map.getPane('cooperations').style.zIndex = 520;
 		map.createPane('territoires');
-		map.getPane('territoires').style.zIndex = 523;
-		map.createPane('metCible2');
-		map.getPane('metCible2').style.zIndex = 530;
-		map.createPane('metCible');
-		map.getPane('metCible').style.zIndex = 540;
+		map.getPane('territoires').style.zIndex = 545;
+		map.createPane('geomCible2');
+		map.getPane('geomCible2').style.zIndex = 530;
+		map.createPane('geomCible');
+		map.getPane('geomCible').style.zIndex = 540;
 		map.createPane('lines');
 		map.getPane('lines').style.zIndex = 550;
 		map.createPane('labels');
@@ -254,7 +254,7 @@
 		Cercles_drom = L.geoJSON(JS_drom, {color: "#ffffff", weight: 0.9, opacity: 1, fillOpacity: 0, pane: "cercles"}).addTo(map);
 		
 		Fond_Regions = L.geoJSON(JS_tout, {
-			filter: function(feature, layer) {return feature.properties.type=="région"},
+			filter: function(feature, layer) {return feature.properties.type=="region"},
 			style : {weight: 0, opacity: 1, fillOpacity: 1, fillColor:"#9ac2c3", pane: "fond"}
 			}).addTo(map);
 		
@@ -264,7 +264,7 @@
 			}).addTo(map);
 		
 		Departements = L.geoJSON(JS_tout, {
-			filter: function(feature, layer) {return feature.properties.type=="départemen"},
+			filter: function(feature, layer) {return feature.properties.type=="departement"},
 			style: {color: "#ffffff", weight: 0.5, opacity: 0.5, fillOpacity: 0, pane: "contour"}
 			}).addTo(map);
 		
@@ -309,7 +309,7 @@
 		//Territoires
 		Territoires = L.geoJSON(JS_territoires, {
 			//filter: function(feature, layer) {return feature.properties.type=="départemen"},
-			style: function(feature){return { color: "white", weight: 0.5, opacity: 0.5, fillOpacity: 0, pane: "territoires", interactive:false, fillColor: getColor("territoire")};},
+			style: function(feature){return { color: "#006099", weight: 0.5, opacity: 0.5, fillOpacity: 0, pane: "territoires", interactive:false, fillColor: getColor("territoire")};},
 			onEachFeature: function(feature, layer) {		
 				layer.bindTooltip(feature.properties.nom, {className: 'TooltipsTerr Tooltips', direction: "center", sticky:true});
 				layer.on('click', function(e) {	
@@ -322,8 +322,7 @@
 					geometrieCibleHover(e.target, 'objet', "territoire"); 
 					});	
 				layer.on('mouseout', function(e) {	
-					if(metCibHover) {map.removeLayer(metCibHover);}
-					terrLayer.clearLayers();
+					if(geomCibHover) {map.removeLayer(geomCibHover);}
 					});	
 				}
 			})
@@ -348,8 +347,7 @@
 					geometrieCibleHover(e.target, 'objet', "cooperation"); 
 					});	
 				layer.on('mouseout', function(e) {	
-					if(metCibHover) {map.removeLayer(metCibHover);}
-					terrLayer.clearLayers();
+					if(geomCibHover) {map.removeLayer(geomCibHover);}
 					});	
 				layer.addTo(coopLayer);
 				}
@@ -376,9 +374,9 @@
 				listeCooperations.push(JS_cooperations.features[i].properties.nom);
 				document.getElementById("liste_toutes_cooperations").innerHTML +=
 					"<div class='liste'" +
-					"onClick='map.flyToBounds(returnCoordsCoop(\""+JS_cooperations.features[i].properties.id_coop+"\"), {padding:[20,20]}); showFiche(\""+JS_cooperations.features[i].properties.id_coop+"\", \"cooperation\"); drawLines(\""+JS_cooperations.features[i].properties.id_coop+"\", \"heavy\"); polylineCoopHeavy.clearLayers();'" +
-					"onmouseover='drawLines(\""+JS_cooperations.features[i].properties.id_coop+"\", \"thin\"); terrImpliques(\""+JS_cooperations.features[i].properties.id_coop+"\")'" +
-					"onmouseout='polylineCoopThin.clearLayers(); terrLayer.clearLayers();'>" +
+					"onClick='map.flyToBounds(returnCoordsCoop(\""+JS_cooperations.features[i].properties.id_coop+"\"), {paddingTopLeft:[300,0]}); showFiche(\""+JS_cooperations.features[i].properties.id_coop+"\", \"cooperation\"); drawLines(\""+JS_cooperations.features[i].properties.id_coop+"\", \"heavy\"); polylineCoopHeavy.clearLayers();'" +
+					"onmouseover='drawLines(\""+JS_cooperations.features[i].properties.id_coop+"\", \"thin\"); geometrieCibleHover(returnCoordsCoop(\""+JS_cooperations.features[i].properties.id_coop+"\"), \"xy\", \"cooperation\"); terrImpliques(\""+JS_cooperations.features[i].properties.id_coop+"\")'" +
+					"onmouseout='polylineCoopThin.clearLayers(); map.removeLayer(geomCibHover); '>" +
 					"&rarr; "+JS_cooperations.features[i].properties.nom+"</div>";
 				}
 		}
@@ -394,7 +392,7 @@
 					for (var i = 0; i < response.length; i++) {
 						listeThemes.push(response[i]);
 						document.getElementById("liste_themes").innerHTML +=
-										"<li onClick='filtre(\""+response[i].id_theme+"\", \""+modalite+"\");document.getElementById(\"selectionner_theme\").innerHTML = \""+response[i].nom_theme+"\";' >"+
+										"<li onClick='filtre(\""+response[i].id_theme+"\", \"theme\");document.getElementById(\"selectionner_theme\").innerHTML = \""+response[i].nom_theme+"\";' >"+
 										"<a href='#'>"+response[i].nom_theme+"</a></li>";
 						}	
 					});
@@ -411,7 +409,7 @@
 					for (var i = 0; i < response.length; i++) {
 						listeModalites.push(response[i]);
 						document.getElementById("liste_modalites").innerHTML +=
-										"<li onClick='filtre(\""+theme+"\", \""+response[i].id_modalite+"\"); console.log(\""+theme+"\"); document.getElementById(\"selectionner_modalite\").innerHTML = \""+response[i].nom_modalite+"\";'>"+
+										"<li onClick='filtre(\""+response[i].id_modalite+"\", \"modalite\"); document.getElementById(\"selectionner_modalite\").innerHTML = \""+response[i].nom_modalite+"\";'>"+
 										"<a href='#'>"+response[i].nom_modalite+"</a></li>";
 						}	
 					});
@@ -419,36 +417,21 @@
 		creerModalites();
 		
 		//couches d'action de sélection
-		var metCib = [];
+		var geomCib = [];
 		function geometrieCible(e, terrcoop){ 
-			if(metCib) {map.removeLayer(metCib);}
+			if(geomCib) {map.removeLayer(geomCib);}
 			var fillColor;
-			if (terrcoop == "territoire"){fillColor="green"} else if (terrcoop == "cooperation"){fillColor="yellow"};
-			metCib = L.polygon(e, {interactive:false, opacity: 1, fillOpacity: 0.8, fillColor: fillColor, weight: 1, color: '#333333', pane: "metCible2"}).addTo(map);
-			console.log(metCib);
+			if (terrcoop == "territoire"){fillColor="#00c6ff"} else if (terrcoop == "cooperation"){fillColor="#ffe500"};
+			geomCib = L.polygon(e, {interactive:false, opacity: 1, fillOpacity: 0.8, fillColor: fillColor, weight: 1, color: '#333333', pane: "geomCible2"}).addTo(map);
 		}
 		
-		var metCibHover = [];
+		var geomCibHover = [];
 		function geometrieCibleHover(e, type, terrcoop){ 
-			if(metCibHover) {map.removeLayer(metCibHover);}
-			var fillColor;
-			if (terrcoop == "territoire"){fillColor="blue"} else if (terrcoop == "cooperation"){fillColor="orange"}
-			if (type == 'objet'){metCibHover = L.polygon(e._latlngs, {fillOpacity: 1, fillColor: fillColor, interactive:false, color: 'white',pane: "metCible", weight:2}).addTo(map);}
-			else if (type == 'xy'){ metCibHover = L.polygon(e, {fillOpacity: 1, fillColor: fillColor, interactive:false, color: 'white',pane: "metCible", weight:2}).addTo(map);}
-			//terrImpliques(e.feature.properties.id_terr);
-		}
-		
-		//Afficher la connexion entre les territoires
-		var terrLayer = new L.layerGroup();
-		function terrImpliques(e) {
-			//Lire la table des correspondances pour tirer la liste des coopérations dans lesquelles le territoire est impliqué
-			for (var i = 0; i < listeTerrCoop.length; i++) {
-				if (e == listeTerrCoop[i].id_coop) {
-					polygon = new L.polygon(returnCoords(listeTerrCoop[i].id_territoire), {fillOpacity: 1, fillColor: 'orange', interactive:false, pane: "metCible", weight:0.2, color: 'white'});
-					polygon.addTo(terrLayer);
-				}
-				terrLayer.addTo(map);
-			}
+			if(geomCibHover) {map.removeLayer(geomCibHover);}
+			var fillColor; var Color
+			if (terrcoop == "territoire"){fillColor="#00c6ff"; Color= "#006099"} else if (terrcoop == "cooperation"){fillColor="yellow"; Color="orange"}
+			if (type == 'objet'){geomCibHover = L.polygon(e._latlngs, {fillOpacity: 1, fillColor: fillColor, interactive:false, color: Color,pane: "geomCible", weight:3}).addTo(map);}
+			else if (type == 'xy'){ geomCibHover = L.polygon(e, {fillOpacity: 1, fillColor: fillColor, interactive:false, color: Color ,pane: "geomCible", weight:3}).addTo(map);}
 		}
 		
 		//aficher les liens inter-territoriaux d'une coopération
@@ -463,8 +446,6 @@
 			for (var i = 0; i < listeTerrCoop.length; i++) {
 				if (e == listeTerrCoop[i].id_coop){
 					centroidArray.push(returnCentroid(listeTerrCoop[i].id_territoire));
-					
-					terrImpliques(listeTerrCoop[i].id_territoire);
 					}
 				}
 				if(type=="thin"){
@@ -495,8 +476,8 @@
 			document.getElementById("divInfos").style.display = "none";
 			
 			polylineCoopHeavy.clearLayers();
-			//if(metCib) {map.removeLayer(metCib);}
-			//if(metCibHover) {map.removeLayer(metCibHover);}
+			//if(geomCib) {map.removeLayer(geomCib);}
+			//if(geomCibHover) {map.removeLayer(geomCibHover);}
 			
 			//Fiche territoire
 			if (couche=="territoire") { 
@@ -512,9 +493,9 @@
 						if(e == listeTerrCoop[i].id_territoire){
 							document.getElementById("liste_cooperations").innerHTML +=
 								"<div class='liste	'" +
-								"onclick='showFiche(\"" +listeTerrCoop[i].id_coop+"\", \"cooperation\" ); drawLines(\""+listeTerrCoop[i].id_coop+"\", \"heavy\"); geometrieCible(\"" +listeTerrCoop[i].id_coop+"\", \"cooperation\"); '" +
-								"onmouseover='drawLines(\""+listeTerrCoop[i].id_coop+"\", \"thin\"); terrImpliques(\""+listeTerrCoop[i].id_coop+"\")'" +
-								"onmouseout='polylineCoopThin.clearLayers(); terrLayer.clearLayers();'>" +
+								"onclick='map.flyToBounds(returnCoordsCoop(\""+listeTerrCoop[i].id_coop+"\"), {paddingTopLeft:[300,0]}); showFiche(\"" +listeTerrCoop[i].id_coop+"\", \"cooperation\" ); drawLines(\""+listeTerrCoop[i].id_coop+"\", \"heavy\"); geometrieCible(returnCoordsCoop(\""+listeTerrCoop[i].id_coop+"\"), \"cooperation\"); '" +
+								"onmouseover='drawLines(\""+listeTerrCoop[i].id_coop+"\", \"thin\"); geometrieCibleHover(returnCoordsCoop(\""+listeTerrCoop[i].id_coop+"\"), \"xy\", \"cooperation\")'" +
+								"onmouseout='polylineCoopThin.clearLayers(); map.removeLayer(geomCibHover);'>" +
 								"&rarr; " + jointure(listeTerrCoop[i].id_coop, 'terr-coop' ,'nom') + "</div>" ;
 						}
 					}
@@ -539,7 +520,7 @@
 						document.getElementById("liste_territoires").innerHTML +=
 						"<div class='liste'" +
 						"onMouseover='geometrieCibleHover(returnCoords(\""+listeTerrCoop[i].id_territoire+"\"), \"xy\", \"territoire\");'" +
-						"onMouseout='map.removeLayer(metCibHover);'" +
+						"onMouseout='map.removeLayer(geomCibHover);'" +
 						"onclick='showFiche(\""+listeTerrCoop[i].id_territoire+"\", \"territoire\"); geometrieCible(returnCoords(\""+listeTerrCoop[i].id_territoire+"\"), \"territoire\"); '>" +
 						"&rarr; " + jointure(listeTerrCoop[i].id_territoire, 'coop-terr', 'nom_terr') +"</div>" ;
 					}
@@ -564,43 +545,40 @@
 /* ACTIONS */
 		
 		function test() {
-			console.log(theme);
+			
 		}
 		
 		// Filtre les coopérations en fonction du thème choisi
-		function filtre(theme_choisi, modalite_choisie) {
-			//console.log("envoi : theme choisi "+theme_choisi+" - modalite choisie "+modalite_choisie);
+		function filtre(condition, thememodalite) {
+			
 			polylineCoopHeavy.clearLayers();
 			document.getElementById("liste_toutes_cooperations").innerHTML = "";
 			
-			theme = theme_choisi;
-			//console.log ("theme"+theme);
-			modalite = modalite_choisie;
+			if (thememodalite == 'theme') {theme = condition;}
+			else if (thememodalite == 'modalite') {modalite = condition;}
 			
 			coopLayer.clearLayers();
-			//console.log("avant boucle : theme "+theme+" - modalite "+modalite);
+
 			if ( theme == 'th00' ) {
 					if (modalite == 'm000') {
 						Cooperations.eachLayer(function(layer){
-								console.log(layer._latlngs);
 								document.getElementById("liste_toutes_cooperations").innerHTML +=
 									"<li class='liste'" +
-									"onclick='showFiche(\"" +layer.feature.properties.id_coop+"\", \"cooperation\"); drawLines(\""+layer.feature.properties.id_coop+"\", \"heavy\"); '" +
-									"onmouseover='drawLines(\""+layer.feature.properties.id_coop+"\", \"thin\"); terrImpliques(\""+layer.feature.properties.id_coop+"\")'" +
-									"onmouseout='polylineCoopThin.clearLayers(); terrLayer.clearLayers();'>" +
+									"onclick='map.flyToBounds(returnCoordsCoop(\""+layer.feature.properties.id_coop+"\"), {paddingTopLeft:[300,0]}); showFiche(\"" +layer.feature.properties.id_coop+"\", \"cooperation\"); drawLines(\""+layer.feature.properties.id_coop+"\", \"heavy\"); '" +
+									"onmouseover='drawLines(\""+layer.feature.properties.id_coop+"\", \"thin\"); geometrieCibleHover(returnCoordsCoop(\""+listeTerrCoop[i].id_coop+"\"), \"xy\", \"cooperation\")'" +
+									"onmouseout='polylineCoopThin.clearLayers(); map.removeLayer(geomCibHover);'>" +
 									"&rarr; " + layer.feature.properties.nom + "</li>" ;
 								layer.addTo(coopLayer);
 							});
 						}
 					else {
-						//console.log("tous les themes : theme "+theme+" - modalite "+modalite);
 						Cooperations.eachLayer(function(layer){
 							if (layer.feature.properties.id_modalite == modalite) {
 								document.getElementById("liste_toutes_cooperations").innerHTML +=
 									"<li class='liste'" +
-									"onclick='showFiche(\"" +layer.feature.properties.id_coop+"\", \"cooperation\"); drawLines(\""+layer.feature.properties.id_coop+"\", \"heavy\");'" +
-									"onmouseover='drawLines(\""+layer.feature.properties.id_coop+"\", \"thin\"); terrImpliques(\""+layer.feature.properties.id_coop+"\")'" +
-									"onmouseout='polylineCoopThin.clearLayers(); terrLayer.clearLayers();'>" +
+									"onclick='map.flyToBounds(returnCoordsCoop(\""+layer.feature.properties.id_coop+"\"), {paddingTopLeft:[300,0]}); showFiche(\"" +layer.feature.properties.id_coop+"\", \"cooperation\"); drawLines(\""+layer.feature.properties.id_coop+"\", \"heavy\");'" +
+									"onmouseover='drawLines(\""+layer.feature.properties.id_coop+"\", \"thin\"); geometrieCibleHover(returnCoordsCoop(\""+listeTerrCoop[i].id_coop+"\"), \"xy\", \"cooperation\")'" +
+									"onmouseout='polylineCoopThin.clearLayers(); map.removeLayer(geomCibHover);'>" +
 									"&rarr; " + layer.feature.properties.nom + "</li>" ;
 								layer.addTo(coopLayer);
 								}
@@ -612,23 +590,22 @@
 						if (layer.feature.properties.id_theme.includes(theme)) {
 							document.getElementById("liste_toutes_cooperations").innerHTML +=
 								"<li class='liste'" +
-								"onclick='showFiche(\"" +layer.feature.properties.id_coop+"\", \"cooperation\"); drawLines(\""+layer.feature.properties.id_coop+"\", \"heavy\");'" +
-								"onmouseover='drawLines(\""+layer.feature.properties.id_coop+"\", \"thin\"); terrImpliques(\""+layer.feature.properties.id_coop+"\")'" +
-								"onmouseout='polylineCoopThin.clearLayers(); terrLayer.clearLayers();'>" +
+								"onclick='map.flyToBounds(returnCoordsCoop(\""+layer.feature.properties.id_coop+"\"), {paddingTopLeft:[300,0]}); showFiche(\"" +layer.feature.properties.id_coop+"\", \"cooperation\"); drawLines(\""+layer.feature.properties.id_coop+"\", \"heavy\");'" +
+								"onmouseover='drawLines(\""+layer.feature.properties.id_coop+"\", \"thin\"); geometrieCibleHover(returnCoordsCoop(\""+listeTerrCoop[i].id_coop+"\"), \"xy\", \"cooperation\")'" +
+								"onmouseout='polylineCoopThin.clearLayers(); map.removeLayer(geomCibHover);'>" +
 								"&rarr; " + layer.feature.properties.nom + "</li>" ;
 							layer.addTo(coopLayer);
 							}
 					});
 				}
 			else {
-				//console.log("2 filtres : theme "+theme+" - modalite "+modalite);
 				Cooperations.eachLayer(function(layer){
 					if (layer.feature.properties.id_theme.includes(theme) && layer.feature.properties.id_modalite == modalite) {
 						document.getElementById("liste_toutes_cooperations").innerHTML +=
 							"<li class='liste'" +
-							"onclick='showFiche(\"" +layer.feature.properties.id_coop+"\", \"cooperation\"); drawLines(\""+layer.feature.properties.id_coop+"\", \"heavy\"); '" +
-							"onmouseover='drawLines(\""+layer.feature.properties.id_coop+"\", \"thin\"); terrImpliques(\""+layer.feature.properties.id_coop+"\")'" +
-							"onmouseout='polylineCoopThin.clearLayers(); terrLayer.clearLayers();'>" +
+							"onclick='map.flyToBounds(returnCoordsCoop(\""+layer.feature.properties.id_coop+"\"), {paddingTopLeft:[300,0]}); showFiche(\"" +layer.feature.properties.id_coop+"\", \"cooperation\"); drawLines(\""+layer.feature.properties.id_coop+"\", \"heavy\"); '" +
+							"onmouseover='drawLines(\""+layer.feature.properties.id_coop+"\", \"thin\"); geometrieCibleHover(returnCoordsCoop(\""+listeTerrCoop[i].id_coop+"\"), \"xy\", \"cooperation\")'" +
+							"onmouseout='polylineCoopThin.clearLayers(); map.removeLayer(geomCibHover);'>" +
 							"&rarr; " + layer.feature.properties.nom + "</li>" ;
 						layer.addTo(coopLayer);
 					}
@@ -722,8 +699,8 @@
 		
 		//Action au clic sur la carte
 		map.on('click', function(e) { 
-			if(metCib) {map.removeLayer(metCib);}
-			if(metCibHover) {map.removeLayer(metCibHover);}
+			if(geomCib) {map.removeLayer(geomCib);}
+			if(geomCibHover) {map.removeLayer(geomCibHover);}
 			polylineCoopHeavy.clearLayers();
 			//retourAcceuil();
 			event.stopPropagation();
@@ -756,7 +733,7 @@
 /* BARRES DE RECHERCHE */	
 		
 		//Barre de recherche n°1 (panneau latéral)
-		var Recherche = L.layerGroup([Territoires, coopLayer]);
+		var Recherche = L.layerGroup([Territoires, Cooperations]);
 		
 		var searchControl = new L.control.search({
 			layer: Recherche,
@@ -769,7 +746,7 @@
 		})
 		
 		searchControl.on('search:locationfound', function(e) {
-			if(metCib) {map.removeLayer(metCib);}
+			if(geomCib) {map.removeLayer(geomCib);}
 			geometrieCible(e.layer._latlngs);
 			showFiche(e.layer.feature.properties, "territoire");
 		});
@@ -797,7 +774,7 @@
 		})
 		
 		searchControl2.on('search:locationfound', function(e) {
-			if(metCib) {map.removeLayer(metCib);}
+			if(geomCib) {map.removeLayer(geomCib);}
 			geometrieCible(e.layer._latlngs);
 			showFiche(e.layer.feature.properties, "territoire");
 		});
