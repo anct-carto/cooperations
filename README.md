@@ -1,4 +1,4 @@
-#Projet de portail des coopérations
+#Carte interactive des coopérations interterritoriales
 En cours de développement
 	
 Lien d'accès à la carte interactive :	
