@@ -81,7 +81,7 @@
 	float:left;
 	list-style: none;
 	padding-left: 0;
-	min-width:120px;
+	width:110%;
 	max-height:122px;
 	box-shadow: 1px 1px 6px rgba(0,0,0,0.4);
 	background-color: rgba(0, 0, 0, 0.25);
@@ -94,13 +94,22 @@
 	margin:2px;
 	padding:2px 4px;
 	display:block;
-	color:black;
+	color:#004e5f;
 	background: #eee;
 	border-radius:.25em;
 	text-decoration:none;	
-	white-space:nowrap;
+	white-space:normal;
 	vertical-align:center;
 }
+
+.search-tip {
+	width:100%;
+}
+
+.search-tip li{
+	width:95%;
+}
+
 .leaflet-control-search .search-button:hover {
 	background-color: #f4f4f4;
 }

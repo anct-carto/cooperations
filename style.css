@@ -94,17 +94,39 @@ h3{
 }
 	
 #sources {
-	margin-top:50px;
+	margin-top:20px;
 	font-size:0.8em;
 	}
 
 .Tooltips {
-	font-size:1.2em;
-	padding:0 3px;
+	font-size:1.25em;
+	line-height:1.1em;
+	padding:3 3px;
 	border:none;
 	font-weight: bold;	
-	margin: -25px 0px;
+	margin: 10px 25px;
 	color:white;
+	white-space: normal;
+	text-align:left;
+	max-width:400px;
+	min-width:150px;
+	box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5), 0 -1px 0 rgba( 255, 255, 255, 0.4);
+	}
+	
+.TooltipSelect {
+	font-size:1.25em;
+	line-height:1.1em;
+	padding:3 3px;
+	border:none;
+	font-weight: bold;	
+	margin: 0px 200px;
+	color:black;
+	white-space: normal;
+	text-align:left;
+	max-width:500px;
+	min-width:300px;
+	background: none;
+	box-shadow: none;
 	}
 	
 .TooltipsTerr {
@@ -112,36 +134,11 @@ h3{
 	}
 
 .TooltipsCoop {
-	background-color: orange;
+	background-color: #c66700;
 	}
 
 .bas {
 	margin-top:50px;
-}
-
-.button_container {
-	margin:10px;
-	}
-	
-.bouton_telecharger {
-	background-color: #657eb6;
-	opacity:1;
-	width:100%;
-	color: white;
-	font-weight: bold;
-	border-radius: 10px;
-	cursor:pointer;
-	padding:5px;
-	font-size:0.9em;
-}
-
-.bouton_telecharger:hover {
-	background-color: yellow;
-	color: #657eb6;
-}
-
-.bouton_telecharger:hover a {
-	color: #657eb6;
 }
 
 #lien:hover {
@@ -159,12 +156,12 @@ h3{
 	}
 
 #divInfos {
-	display: none;
+	display: block;
 	color: #004e5f;
 	}
 	
 #defaut {
-	display: block;
+	display: none;
 	}
 	
 .onglets{
@@ -245,27 +242,92 @@ h3{
 	z-index: 1000;
 }
 
-.labelClassReg {
-	line-height:9px;	
+#def {
+	display:none;
 	font-size:0.9em;
-	font-weight: bold;
-	color:rgba(0,65,77,1);
+    position: absolute;
+	top: 30%;
+	left: 40%;
+	background-color: rgba(0,100,119,0.97);
+	width:400px;
+	z-index: 3000;
 	text-align:center;
+	padding:15px;
+	border-radius:7px;
+	border: 1px solid rgba(255,255,255,1);
+	box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5), 0 -1px 0 rgba( 255, 255, 255, 0.4);
+}
+
+.bouton {
+	width: 80%;
+	font-size: 1.1em;
+	cursor: pointer;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;	
+	background-color: #428e9b;
+	margin:25px;
+	padding: 10px;
+	border-radius: 4px;
+	position: relative;
+	box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5), 0 -1px 0 rgba( 255, 255, 255, 0.4);
+	}	
+
+.button_container {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+.bouton:hover, .bouton_reinitialiser:hover {
+	background-color: yellow;
+	color: #004e5f;
+	}
+	
+.bouton_reinitialiser{
+	width: 80%;
+	font-size: 0.9em;
+	cursor: pointer;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;	
+	background-color: #428e9b;
+	margin:2px;
+	padding: 5px;
+	border-radius: 4px;
+	position: relative;
+	box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5), 0 -1px 0 rgba( 255, 255, 255, 0.4);
+}
+
+.label {
+	text-align: center;
+	width: 70px;
+}
+	
+.labelClassReg {
+	padding: 3px;
+	line-height:12px;	
+	font-size:1.1em;
+	font-weight: bold;
+	color:rgba(0,65,77,0.6);
 }
 
 .labelClassDep {
-	line-height:9px;	
-	font-size:0.85em;
+	padding: 3px;
+	line-height:10px;	
+	font-size:1em;
 	font-weight: bold;
-	color:rgba(0,65,77,0.9);
+	color:rgba(0,65,77,0.65);
 	text-align:center;
 }
 
-.labelClassCan {
-	line-height:8px;	
-	font-size:0.8em;
+.labelClassEpci {
+	padding: 3px;
+	line-height:9px;	
+	font-size:0.9em;
 	font-weight: bold;
-	color:rgba(0,65,77,0.8);
-	text-align:center;
+	color:rgba(0,65,77,0.7);
+	max-width:500px;
 }
 

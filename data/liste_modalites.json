@@ -1,5 +1,5 @@
 [
-{
+	{
     "id_modalite": "m000",
     "nom_modalite": "Toutes les modalités"
   },
@@ -13,7 +13,7 @@
   },
   {
     "id_modalite": "m003",
-    "nom_modalite": "Dialogue/coordination sans outil dédié"
+    "nom_modalite": "Dialogue / coordination sans outil dédié"
   },
   {
     "id_modalite": "m004",

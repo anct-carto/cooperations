@@ -1,7 +1,7 @@
 [
-{
+  {
     "id_theme": "th00",
-    "nom_theme": "Tous les thèmes"
+    "nom_theme": "Toutes les thématiques"
   },
   {
     "id_theme": "th01",
@@ -17,11 +17,11 @@
   },
   {
     "id_theme": "th04",
-    "nom_theme": "Environnement"
+    "nom_theme": "Environnement et biodiversité"
   },
   {
     "id_theme": "th05",
-    "nom_theme": "Culture"
+    "nom_theme": "Culture et patrimoine"
   },
   {
     "id_theme": "th06",
@@ -45,11 +45,11 @@
   },
   {
     "id_theme": "th11",
-    "nom_theme": "Stratégie territoriale"
+    "nom_theme": "Stratégie territoriale et planification"
   },
   {
     "id_theme": "th12",
-    "nom_theme": "Agroalimentaire, alimentation, circuits courts"
+    "nom_theme": "Agroalimentaire, alimentation, agriculture"
   },
   {
     "id_theme": "th13",
