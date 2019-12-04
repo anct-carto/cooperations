@@ -301,9 +301,8 @@
 		Contour_Epci = L.geoJSON(JS_tout, {
 			filter: function(feature, layer) {return feature.properties.type=="epci"},
 			style : {color: "#ffffff", weight: 0.2, opacity: 0.4, fillOpacity: 0, pane: "contour"}
-			}).addTo(map);
-			
-		console.log(Contour_Epci);
+			})
+			//.addTo(map);
 		
 		//Création des labels
 		var createLabelIcon = function(labelClass,labelText){
