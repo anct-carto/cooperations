@@ -215,7 +215,7 @@
 	<script type="text/javascript" src="data/296territoires.js"></script>
 	<script type="text/javascript" src="data/125cooperations.js"></script>
 	<script type="text/javascript" src="data/masque.js"></script>
-	<script type="text/javascript" src="data/toutes_Couches2.js"></script>
+	<script type="text/javascript" src="data/toutes_couches.js"></script>
 	<script type="text/javascript" src="data/cercles_drom.js"></script>
 	<script type="text/javascript" src="data/toponymes.js"></script>
     
@@ -298,10 +298,10 @@
 			style: {color: "#ffffff", weight: 0.5, opacity: 0.5, fillOpacity: 0, pane: "contour"}
 			}).addTo(map);
 			
-		/*Contour_Epci = L.geoJSON(JS_tout, {
+		Contour_Epci = L.geoJSON(JS_tout, {
 			filter: function(feature, layer) {return feature.properties.type=="epci"},
 			style : {color: "#ffffff", weight: 0.2, opacity: 0.4, fillOpacity: 0, pane: "contour"}
-			}).addTo(map);*/
+			}).addTo(map);
 		
 		//Création des labels
 		var createLabelIcon = function(labelClass,labelText){
