@@ -8,6 +8,14 @@
     "id_territoire": "bordeaux_t0001"
   },
   {
+    "id_coop": "bordeaux1",
+    "id_territoire": "bordeaux_t0014"
+  },
+  {
+    "id_coop": "bordeaux1",
+    "id_territoire": "bordeaux_t0015"
+  },
+  {
     "id_coop": "bordeaux2",
     "id_territoire": "bordeaux_t0014"
   },
@@ -120,6 +128,10 @@
     "id_territoire": "brest_t0011"
   },
   {
+    "id_coop": "brest4",
+    "id_territoire": "brest_t0000"
+  },
+  {
     "id_coop": "brest5",
     "id_territoire": "brest_t0000"
   },
@@ -180,6 +192,10 @@
     "id_territoire": "brest_t0014"
   },
   {
+    "id_coop": "brest6",
+    "id_territoire": "brest_t0016"
+  },
+  {
     "id_coop": "brest7",
     "id_territoire": "brest_t0000"
   },
@@ -206,30 +222,6 @@
   {
     "id_coop": "brest7",
     "id_territoire": "brest_t0006"
-  },
-  {
-    "id_coop": "brest8",
-    "id_territoire": "brest_t0000"
-  },
-  {
-    "id_coop": "brest8",
-    "id_territoire": "brest_t0015"
-  },
-  {
-    "id_coop": "brest8",
-    "id_territoire": "brest_t0007"
-  },
-  {
-    "id_coop": "brest8",
-    "id_territoire": "brest_t0008"
-  },
-  {
-    "id_coop": "brest8",
-    "id_territoire": "brest_t0012"
-  },
-  {
-    "id_coop": "brest8",
-    "id_territoire": "brest_t0010"
   },
   {
     "id_coop": "brest9",
@@ -313,6 +305,14 @@
   },
   {
     "id_coop": "clermont4",
+    "id_territoire": "clermont_t0002"
+  },
+  {
+    "id_coop": "clermont4",
+    "id_territoire": "clermont_t0004"
+  },
+  {
+    "id_coop": "clermont4",
     "id_territoire": "clermont_t0010"
   },
   {
@@ -336,20 +336,12 @@
     "id_territoire": "clermont_t0000"
   },
   {
-    "id_coop": "clermont5",
-    "id_territoire": "clermont_t0014"
-  },
-  {
-    "id_coop": "clermont6",
-    "id_territoire": "clermont_t0014"
-  },
-  {
     "id_coop": "clermont6",
     "id_territoire": "clermont_t0001"
   },
   {
     "id_coop": "clermont6",
-    "id_territoire": "clermont_t0015"
+    "id_territoire": "clermont_t0000"
   },
   {
     "id_coop": "clermont7",
@@ -365,11 +357,79 @@
   },
   {
     "id_coop": "clermont7",
-    "id_territoire": "clermont_t0014"
+    "id_territoire": "clermont_t0004"
   },
   {
-    "id_coop": "clermont7",
-    "id_territoire": "clermont_t0004"
+    "id_coop": "dijon10",
+    "id_territoire": "dijon_t0000"
+  },
+  {
+    "id_coop": "dijon11",
+    "id_territoire": "dijon_t0000"
+  },
+  {
+    "id_coop": "dijon12",
+    "id_territoire": "dijon_t0000"
+  },
+  {
+    "id_coop": "dijon12",
+    "id_territoire": "dijon_t0015"
+  },
+  {
+    "id_coop": "dijon12",
+    "id_territoire": "dijon_t0009"
+  },
+  {
+    "id_coop": "dijon12",
+    "id_territoire": "dijon_t0018"
+  },
+  {
+    "id_coop": "dijon12",
+    "id_territoire": "dijon_t0000"
+  },
+  {
+    "id_coop": "dijon12",
+    "id_territoire": "dijon_t0015"
+  },
+  {
+    "id_coop": "dijon12",
+    "id_territoire": "dijon_t0009"
+  },
+  {
+    "id_coop": "dijon12",
+    "id_territoire": "dijon_t0022"
+  },
+  {
+    "id_coop": "dijon12",
+    "id_territoire": "dijon_t0021"
+  },
+  {
+    "id_coop": "dijon15",
+    "id_territoire": "dijon_t0000"
+  },
+  {
+    "id_coop": "dijon15",
+    "id_territoire": "dijon_t0019"
+  },
+  {
+    "id_coop": "dijon15",
+    "id_territoire": "dijon_t0000"
+  },
+  {
+    "id_coop": "dijon15",
+    "id_territoire": "dijon_t0019"
+  },
+  {
+    "id_coop": "dijon16",
+    "id_territoire": "dijon_t0020"
+  },
+  {
+    "id_coop": "dijon17",
+    "id_territoire": "dijon_t0020"
+  },
+  {
+    "id_coop": "dijon18",
+    "id_territoire": "dijon_t0020"
   },
   {
     "id_coop": "dijon2",
@@ -506,90 +566,6 @@
   {
     "id_coop": "dijon7",
     "id_territoire": "dijon_t0008"
-  },
-  {
-    "id_coop": "dijon9",
-    "id_territoire": "dijon_t0000"
-  },
-  {
-    "id_coop": "dijon9",
-    "id_territoire": "dijon_t0016"
-  },
-  {
-    "id_coop": "dijon10",
-    "id_territoire": "dijon_t0000"
-  },
-  {
-    "id_coop": "dijon10",
-    "id_territoire": "dijon_t0017"
-  },
-  {
-    "id_coop": "dijon11",
-    "id_territoire": "dijon_t0000"
-  },
-  {
-    "id_coop": "dijon11",
-    "id_territoire": "dijon_t0017"
-  },
-  {
-    "id_coop": "dijon11",
-    "id_territoire": "dijon_t0016"
-  },
-  {
-    "id_coop": "dijon12",
-    "id_territoire": "dijon_t0000"
-  },
-  {
-    "id_coop": "dijon12",
-    "id_territoire": "dijon_t0015"
-  },
-  {
-    "id_coop": "dijon12",
-    "id_territoire": "dijon_t0009"
-  },
-  {
-    "id_coop": "dijon12",
-    "id_territoire": "dijon_t0018"
-  },
-  {
-    "id_coop": "dijon15",
-    "id_territoire": "dijon_t0000"
-  },
-  {
-    "id_coop": "dijon15",
-    "id_territoire": "dijon_t0017"
-  },
-  {
-    "id_coop": "dijon15",
-    "id_territoire": "dijon_t0019"
-  },
-  {
-    "id_coop": "dijon16",
-    "id_territoire": "dijon_t0020"
-  },
-  {
-    "id_coop": "dijon16",
-    "id_territoire": "dijon_t0016"
-  },
-  {
-    "id_coop": "dijon17",
-    "id_territoire": "dijon_t0020"
-  },
-  {
-    "id_coop": "dijon17",
-    "id_territoire": "dijon_t0016"
-  },
-  {
-    "id_coop": "dijon18",
-    "id_territoire": "dijon_t0020"
-  },
-  {
-    "id_coop": "dijon18",
-    "id_territoire": "dijon_t0016"
-  },
-  {
-    "id_coop": "dijon18",
-    "id_territoire": "dijon_t0017"
   },
   {
     "id_coop": "grenoble1",
@@ -744,12 +720,1076 @@
     "id_territoire": "lille_t0002"
   },
   {
-    "id_coop": "polem1",
-    "id_territoire": "polem_t0129"
+    "id_coop": "lille3",
+    "id_territoire": "lille_t0000"
   },
   {
-    "id_coop": "polem1",
-    "id_territoire": "polem_t0135"
+    "id_coop": "lille3",
+    "id_territoire": "lille_t0003"
+  },
+  {
+    "id_coop": "lille4",
+    "id_territoire": "lille_t0000"
+  },
+  {
+    "id_coop": "lille4",
+    "id_territoire": "lille_t0004"
+  },
+  {
+    "id_coop": "lille4",
+    "id_territoire": "lille_t0005"
+  },
+  {
+    "id_coop": "lille5",
+    "id_territoire": "lille_t0000"
+  },
+  {
+    "id_coop": "lille5",
+    "id_territoire": "lille_t0006"
+  },
+  {
+    "id_coop": "lyon11",
+    "id_territoire": "lyon_t0000"
+  },
+  {
+    "id_coop": "lyon11",
+    "id_territoire": "lyon_t0036"
+  },
+  {
+    "id_coop": "lyon11",
+    "id_territoire": "lyon_t0037"
+  },
+  {
+    "id_coop": "lyon12",
+    "id_territoire": "lyon_t0000"
+  },
+  {
+    "id_coop": "lyon12",
+    "id_territoire": "lyon_t0038"
+  },
+  {
+    "id_coop": "lyon12",
+    "id_territoire": "lyon_t0010"
+  },
+  {
+    "id_coop": "lyon13",
+    "id_territoire": "lyon_t0000"
+  },
+  {
+    "id_coop": "lyon13",
+    "id_territoire": "lyon_t0005"
+  },
+  {
+    "id_coop": "lyon13",
+    "id_territoire": "lyon_t0006"
+  },
+  {
+    "id_coop": "lyon13",
+    "id_territoire": "lyon_t0007"
+  },
+  {
+    "id_coop": "lyon13",
+    "id_territoire": "lyon_t0008"
+  },
+  {
+    "id_coop": "lyon13",
+    "id_territoire": "lyon_t0009"
+  },
+  {
+    "id_coop": "lyon13",
+    "id_territoire": "lyon_t0010"
+  },
+  {
+    "id_coop": "lyon14",
+    "id_territoire": "lyon_t0000"
+  },
+  {
+    "id_coop": "lyon14",
+    "id_territoire": "lyon_t0003"
+  },
+  {
+    "id_coop": "lyon14",
+    "id_territoire": "lyon_t0001"
+  },
+  {
+    "id_coop": "lyon14",
+    "id_territoire": "lyon_t0004"
+  },
+  {
+    "id_coop": "lyon15",
+    "id_territoire": "lyon_t0039"
+  },
+  {
+    "id_coop": "lyon15",
+    "id_territoire": "lyon_t0040"
+  },
+  {
+    "id_coop": "lyon15",
+    "id_territoire": "lyon_t0041"
+  },
+  {
+    "id_coop": "lyon15",
+    "id_territoire": "lyon_t0042"
+  },
+  {
+    "id_coop": "lyon15",
+    "id_territoire": "lyon_t0043"
+  },
+  {
+    "id_coop": "lyon15",
+    "id_territoire": "lyon_t0044"
+  },
+  {
+    "id_coop": "lyon15",
+    "id_territoire": "lyon_t0045"
+  },
+  {
+    "id_coop": "lyon16",
+    "id_territoire": "lyon_t0000"
+  },
+  {
+    "id_coop": "lyon16",
+    "id_territoire": "lyon_t0012"
+  },
+  {
+    "id_coop": "lyon16",
+    "id_territoire": "lyon_t0013"
+  },
+  {
+    "id_coop": "lyon16",
+    "id_territoire": "lyon_t0014"
+  },
+  {
+    "id_coop": "lyon17",
+    "id_territoire": "lyon_t0000"
+  },
+  {
+    "id_coop": "lyon17",
+    "id_territoire": "lyon_t0015"
+  },
+  {
+    "id_coop": "lyon18",
+    "id_territoire": "lyon_t0000"
+  },
+  {
+    "id_coop": "lyon18",
+    "id_territoire": "lyon_t0021"
+  },
+  {
+    "id_coop": "lyon19",
+    "id_territoire": "lyon_t0000"
+  },
+  {
+    "id_coop": "lyon19",
+    "id_territoire": "lyon_t0021"
+  },
+  {
+    "id_coop": "lyon19",
+    "id_territoire": "lyon_t0020"
+  },
+  {
+    "id_coop": "lyon19",
+    "id_territoire": "lyon_t0022"
+  },
+  {
+    "id_coop": "lyon2",
+    "id_territoire": "lyon_t0023"
+  },
+  {
+    "id_coop": "lyon2",
+    "id_territoire": "lyon_t0024"
+  },
+  {
+    "id_coop": "lyon2",
+    "id_territoire": "lyon_t0025"
+  },
+  {
+    "id_coop": "lyon2",
+    "id_territoire": "lyon_t0026"
+  },
+  {
+    "id_coop": "lyon2",
+    "id_territoire": "lyon_t0027"
+  },
+  {
+    "id_coop": "lyon2",
+    "id_territoire": "lyon_t0028"
+  },
+  {
+    "id_coop": "lyon2",
+    "id_territoire": "lyon_t0029"
+  },
+  {
+    "id_coop": "lyon2",
+    "id_territoire": "lyon_t0030"
+  },
+  {
+    "id_coop": "lyon2",
+    "id_territoire": "lyon_t0031"
+  },
+  {
+    "id_coop": "lyon2",
+    "id_territoire": "lyon_t0032"
+  },
+  {
+    "id_coop": "lyon2",
+    "id_territoire": "lyon_t0033"
+  },
+  {
+    "id_coop": "lyon2",
+    "id_territoire": "lyon_t0034"
+  },
+  {
+    "id_coop": "lyon2",
+    "id_territoire": "lyon_t0035"
+  },
+  {
+    "id_coop": "lyon7",
+    "id_territoire": "lyon_t0000"
+  },
+  {
+    "id_coop": "lyon7",
+    "id_territoire": "lyon_t0001"
+  },
+  {
+    "id_coop": "lyon7",
+    "id_territoire": "lyon_t0002"
+  },
+  {
+    "id_coop": "lyon8",
+    "id_territoire": "lyon_t0000"
+  },
+  {
+    "id_coop": "lyon8",
+    "id_territoire": "lyon_t0003"
+  },
+  {
+    "id_coop": "lyon8",
+    "id_territoire": "lyon_t0004"
+  },
+  {
+    "id_coop": "metz1",
+    "id_territoire": "metz_t0000"
+  },
+  {
+    "id_coop": "metz1",
+    "id_territoire": "metz_t0001"
+  },
+  {
+    "id_coop": "metz1",
+    "id_territoire": "metz_t0002"
+  },
+  {
+    "id_coop": "metz1",
+    "id_territoire": "metz_t0003"
+  },
+  {
+    "id_coop": "metz1",
+    "id_territoire": "metz_t0004"
+  },
+  {
+    "id_coop": "metz1",
+    "id_territoire": "metz_t0005"
+  },
+  {
+    "id_coop": "metz1",
+    "id_territoire": "metz_t0006"
+  },
+  {
+    "id_coop": "metz2",
+    "id_territoire": "metz_t0000"
+  },
+  {
+    "id_coop": "metz2",
+    "id_territoire": "metz_t0010"
+  },
+  {
+    "id_coop": "metz3",
+    "id_territoire": "metz_t0000"
+  },
+  {
+    "id_coop": "metz3",
+    "id_territoire": "metz_t0007"
+  },
+  {
+    "id_coop": "metz3",
+    "id_territoire": "metz_t0006"
+  },
+  {
+    "id_coop": "metz3",
+    "id_territoire": "metz_t0008"
+  },
+  {
+    "id_coop": "metz3",
+    "id_territoire": "metz_t0009"
+  },
+  {
+    "id_coop": "metz3",
+    "id_territoire": "metz_t0005"
+  },
+  {
+    "id_coop": "metz3",
+    "id_territoire": "metz_t0003"
+  },
+  {
+    "id_coop": "metz4",
+    "id_territoire": "metz_t0000"
+  },
+  {
+    "id_coop": "metz4",
+    "id_territoire": "metz_t0007"
+  },
+  {
+    "id_coop": "metz4",
+    "id_territoire": "metz_t0006"
+  },
+  {
+    "id_coop": "metz4",
+    "id_territoire": "metz_t0008"
+  },
+  {
+    "id_coop": "metz4",
+    "id_territoire": "metz_t0009"
+  },
+  {
+    "id_coop": "metz4",
+    "id_territoire": "metz_t0005"
+  },
+  {
+    "id_coop": "metz4",
+    "id_territoire": "metz_t0003"
+  },
+  {
+    "id_coop": "metz6",
+    "id_territoire": "metz_t0000"
+  },
+  {
+    "id_coop": "metz6",
+    "id_territoire": "metz_t0007"
+  },
+  {
+    "id_coop": "metz7",
+    "id_territoire": "metz_t0000"
+  },
+  {
+    "id_coop": "metz7",
+    "id_territoire": "metz_t0007"
+  },
+  {
+    "id_coop": "montpellier1",
+    "id_territoire": "montpellier_t0000"
+  },
+  {
+    "id_coop": "montpellier1",
+    "id_territoire": "montpellier_t0001"
+  },
+  {
+    "id_coop": "montpellier1",
+    "id_territoire": "montpellier_t0002"
+  },
+  {
+    "id_coop": "montpellier1",
+    "id_territoire": "montpellier_t0003"
+  },
+  {
+    "id_coop": "montpellier1",
+    "id_territoire": "montpellier_t0004"
+  },
+  {
+    "id_coop": "montpellier1",
+    "id_territoire": "montpellier_t0005"
+  },
+  {
+    "id_coop": "montpellier2",
+    "id_territoire": "montpellier_t0000"
+  },
+  {
+    "id_coop": "montpellier2",
+    "id_territoire": "montpellier_t0001"
+  },
+  {
+    "id_coop": "montpellier2",
+    "id_territoire": "montpellier_t0002"
+  },
+  {
+    "id_coop": "montpellier2",
+    "id_territoire": "montpellier_t0003"
+  },
+  {
+    "id_coop": "montpellier2",
+    "id_territoire": "montpellier_t0004"
+  },
+  {
+    "id_coop": "montpellier2",
+    "id_territoire": "montpellier_t0005"
+  },
+  {
+    "id_coop": "montpellier3",
+    "id_territoire": "montpellier_t0000"
+  },
+  {
+    "id_coop": "montpellier3",
+    "id_territoire": "montpellier_t0001"
+  },
+  {
+    "id_coop": "montpellier3",
+    "id_territoire": "montpellier_t0002"
+  },
+  {
+    "id_coop": "montpellier3",
+    "id_territoire": "montpellier_t0003"
+  },
+  {
+    "id_coop": "montpellier3",
+    "id_territoire": "montpellier_t0004"
+  },
+  {
+    "id_coop": "montpellier3",
+    "id_territoire": "montpellier_t0005"
+  },
+  {
+    "id_coop": "montpellier4",
+    "id_territoire": "montpellier_t0000"
+  },
+  {
+    "id_coop": "montpellier4",
+    "id_territoire": "montpellier_t0001"
+  },
+  {
+    "id_coop": "montpellier4",
+    "id_territoire": "montpellier_t0002"
+  },
+  {
+    "id_coop": "montpellier4",
+    "id_territoire": "montpellier_t0003"
+  },
+  {
+    "id_coop": "montpellier4",
+    "id_territoire": "montpellier_t0004"
+  },
+  {
+    "id_coop": "montpellier4",
+    "id_territoire": "montpellier_t0005"
+  },
+  {
+    "id_coop": "montpellier5",
+    "id_territoire": "montpellier_t0000"
+  },
+  {
+    "id_coop": "montpellier5",
+    "id_territoire": "montpellier_t0001"
+  },
+  {
+    "id_coop": "montpellier5",
+    "id_territoire": "montpellier_t0002"
+  },
+  {
+    "id_coop": "montpellier5",
+    "id_territoire": "montpellier_t0003"
+  },
+  {
+    "id_coop": "montpellier5",
+    "id_territoire": "montpellier_t0004"
+  },
+  {
+    "id_coop": "montpellier5",
+    "id_territoire": "montpellier_t0005"
+  },
+  {
+    "id_coop": "montpellier6",
+    "id_territoire": "montpellier_t0000"
+  },
+  {
+    "id_coop": "montpellier6",
+    "id_territoire": "montpellier_t0006"
+  },
+  {
+    "id_coop": "montpellier6",
+    "id_territoire": "montpellier_t0010"
+  },
+  {
+    "id_coop": "montpellier7",
+    "id_territoire": "montpellier_t0000"
+  },
+  {
+    "id_coop": "montpellier7",
+    "id_territoire": "toulouse_t0000"
+  },
+  {
+    "id_coop": "montpellier8",
+    "id_territoire": "montpellier_t0000"
+  },
+  {
+    "id_coop": "montpellier8",
+    "id_territoire": "montpellier_t0007"
+  },
+  {
+    "id_coop": "montpellier8",
+    "id_territoire": "montpellier_t0008"
+  },
+  {
+    "id_coop": "montpellier8",
+    "id_territoire": "montpellier_t0003"
+  },
+  {
+    "id_coop": "montpellier9",
+    "id_territoire": "montpellier_t0000"
+  },
+  {
+    "id_coop": "montpellier9",
+    "id_territoire": "montpellier_t0009"
+  },
+  {
+    "id_coop": "nancy1",
+    "id_territoire": "nancy_t0000"
+  },
+  {
+    "id_coop": "nancy1",
+    "id_territoire": "nancy_t0001"
+  },
+  {
+    "id_coop": "nancy1",
+    "id_territoire": "nancy_t0002"
+  },
+  {
+    "id_coop": "nancy1",
+    "id_territoire": "nancy_t0003"
+  },
+  {
+    "id_coop": "nancy1",
+    "id_territoire": "nancy_t0004"
+  },
+  {
+    "id_coop": "nancy1",
+    "id_territoire": "nancy_t0005"
+  },
+  {
+    "id_coop": "nancy1",
+    "id_territoire": "nancy_t0006"
+  },
+  {
+    "id_coop": "nancy1",
+    "id_territoire": "nancy_t0007"
+  },
+  {
+    "id_coop": "nancy1",
+    "id_territoire": "nancy_t0008"
+  },
+  {
+    "id_coop": "nancy1",
+    "id_territoire": "nancy_t0009"
+  },
+  {
+    "id_coop": "nancy1",
+    "id_territoire": "nancy_t0010"
+  },
+  {
+    "id_coop": "nancy1",
+    "id_territoire": "nancy_t0011"
+  },
+  {
+    "id_coop": "nancy1",
+    "id_territoire": "nancy_t0012"
+  },
+  {
+    "id_coop": "nancy2",
+    "id_territoire": "nancy_t0000"
+  },
+  {
+    "id_coop": "nancy2",
+    "id_territoire": "nancy_t0001"
+  },
+  {
+    "id_coop": "nancy2",
+    "id_territoire": "nancy_t0002"
+  },
+  {
+    "id_coop": "nancy2",
+    "id_territoire": "nancy_t0003"
+  },
+  {
+    "id_coop": "nancy2",
+    "id_territoire": "nancy_t0004"
+  },
+  {
+    "id_coop": "nancy2",
+    "id_territoire": "nancy_t0005"
+  },
+  {
+    "id_coop": "nancy2",
+    "id_territoire": "nancy_t0006"
+  },
+  {
+    "id_coop": "nancy2",
+    "id_territoire": "nancy_t0007"
+  },
+  {
+    "id_coop": "nancy2",
+    "id_territoire": "nancy_t0008"
+  },
+  {
+    "id_coop": "nancy2",
+    "id_territoire": "nancy_t0009"
+  },
+  {
+    "id_coop": "nancy2",
+    "id_territoire": "nancy_t0010"
+  },
+  {
+    "id_coop": "nancy2",
+    "id_territoire": "nancy_t0011"
+  },
+  {
+    "id_coop": "nancy2",
+    "id_territoire": "nancy_t0012"
+  },
+  {
+    "id_coop": "nancy3",
+    "id_territoire": "nancy_t0000"
+  },
+  {
+    "id_coop": "nancy3",
+    "id_territoire": "nancy_t0001"
+  },
+  {
+    "id_coop": "nancy3",
+    "id_territoire": "nancy_t0002"
+  },
+  {
+    "id_coop": "nancy3",
+    "id_territoire": "nancy_t0003"
+  },
+  {
+    "id_coop": "nancy3",
+    "id_territoire": "nancy_t0004"
+  },
+  {
+    "id_coop": "nancy3",
+    "id_territoire": "nancy_t0005"
+  },
+  {
+    "id_coop": "nancy3",
+    "id_territoire": "nancy_t0006"
+  },
+  {
+    "id_coop": "nancy3",
+    "id_territoire": "nancy_t0007"
+  },
+  {
+    "id_coop": "nancy3",
+    "id_territoire": "nancy_t0008"
+  },
+  {
+    "id_coop": "nancy3",
+    "id_territoire": "nancy_t0009"
+  },
+  {
+    "id_coop": "nancy3",
+    "id_territoire": "nancy_t0010"
+  },
+  {
+    "id_coop": "nancy3",
+    "id_territoire": "nancy_t0011"
+  },
+  {
+    "id_coop": "nancy3",
+    "id_territoire": "nancy_t0012"
+  },
+  {
+    "id_coop": "nancy4",
+    "id_territoire": "nancy_t0000"
+  },
+  {
+    "id_coop": "nancy4",
+    "id_territoire": "nancy_t0001"
+  },
+  {
+    "id_coop": "nancy4",
+    "id_territoire": "nancy_t0002"
+  },
+  {
+    "id_coop": "nancy4",
+    "id_territoire": "nancy_t0003"
+  },
+  {
+    "id_coop": "nancy4",
+    "id_territoire": "nancy_t0004"
+  },
+  {
+    "id_coop": "nancy4",
+    "id_territoire": "nancy_t0005"
+  },
+  {
+    "id_coop": "nancy4",
+    "id_territoire": "nancy_t0006"
+  },
+  {
+    "id_coop": "nancy4",
+    "id_territoire": "nancy_t0007"
+  },
+  {
+    "id_coop": "nancy4",
+    "id_territoire": "nancy_t0008"
+  },
+  {
+    "id_coop": "nancy4",
+    "id_territoire": "nancy_t0009"
+  },
+  {
+    "id_coop": "nancy4",
+    "id_territoire": "nancy_t0010"
+  },
+  {
+    "id_coop": "nancy4",
+    "id_territoire": "nancy_t0011"
+  },
+  {
+    "id_coop": "nancy4",
+    "id_territoire": "nancy_t0012"
+  },
+  {
+    "id_coop": "nancy5",
+    "id_territoire": "nancy_t0000"
+  },
+  {
+    "id_coop": "nancy5",
+    "id_territoire": "nancy_t0001"
+  },
+  {
+    "id_coop": "nancy5",
+    "id_territoire": "nancy_t0002"
+  },
+  {
+    "id_coop": "nancy5",
+    "id_territoire": "nancy_t0003"
+  },
+  {
+    "id_coop": "nancy5",
+    "id_territoire": "nancy_t0004"
+  },
+  {
+    "id_coop": "nancy5",
+    "id_territoire": "nancy_t0005"
+  },
+  {
+    "id_coop": "nancy5",
+    "id_territoire": "nancy_t0006"
+  },
+  {
+    "id_coop": "nancy5",
+    "id_territoire": "nancy_t0007"
+  },
+  {
+    "id_coop": "nancy5",
+    "id_territoire": "nancy_t0008"
+  },
+  {
+    "id_coop": "nancy5",
+    "id_territoire": "nancy_t0009"
+  },
+  {
+    "id_coop": "nancy5",
+    "id_territoire": "nancy_t0010"
+  },
+  {
+    "id_coop": "nancy5",
+    "id_territoire": "nancy_t0011"
+  },
+  {
+    "id_coop": "nancy5",
+    "id_territoire": "nancy_t0012"
+  },
+  {
+    "id_coop": "nancy6",
+    "id_territoire": "nancy_t0000"
+  },
+  {
+    "id_coop": "nancy6",
+    "id_territoire": "nancy_t0001"
+  },
+  {
+    "id_coop": "nancy6",
+    "id_territoire": "nancy_t0002"
+  },
+  {
+    "id_coop": "nancy6",
+    "id_territoire": "nancy_t0003"
+  },
+  {
+    "id_coop": "nancy6",
+    "id_territoire": "nancy_t0004"
+  },
+  {
+    "id_coop": "nancy6",
+    "id_territoire": "nancy_t0005"
+  },
+  {
+    "id_coop": "nancy6",
+    "id_territoire": "nancy_t0006"
+  },
+  {
+    "id_coop": "nancy6",
+    "id_territoire": "nancy_t0007"
+  },
+  {
+    "id_coop": "nancy6",
+    "id_territoire": "nancy_t0008"
+  },
+  {
+    "id_coop": "nancy6",
+    "id_territoire": "nancy_t0009"
+  },
+  {
+    "id_coop": "nancy6",
+    "id_territoire": "nancy_t0010"
+  },
+  {
+    "id_coop": "nancy6",
+    "id_territoire": "nancy_t0011"
+  },
+  {
+    "id_coop": "nancy6",
+    "id_territoire": "nancy_t0012"
+  },
+  {
+    "id_coop": "nantes1",
+    "id_territoire": "nantes_t0000"
+  },
+  {
+    "id_coop": "nantes1",
+    "id_territoire": "nantes_t0001"
+  },
+  {
+    "id_coop": "nantes2",
+    "id_territoire": "nantes_t0000"
+  },
+  {
+    "id_coop": "nantes2",
+    "id_territoire": "nantes_t0001"
+  },
+  {
+    "id_coop": "nantes2",
+    "id_territoire": "nantes_t0002"
+  },
+  {
+    "id_coop": "nantes3",
+    "id_territoire": "nantes_t0000"
+  },
+  {
+    "id_coop": "nantes3",
+    "id_territoire": "nantes_t0003"
+  },
+  {
+    "id_coop": "nantes3",
+    "id_territoire": "nantes_t0004"
+  },
+  {
+    "id_coop": "nantes3",
+    "id_territoire": "nantes_t0005"
+  },
+  {
+    "id_coop": "nantes3",
+    "id_territoire": "nantes_t0006"
+  },
+  {
+    "id_coop": "nantes3",
+    "id_territoire": "nantes_t0007"
+  },
+  {
+    "id_coop": "nantes4",
+    "id_territoire": "nantes_t0000"
+  },
+  {
+    "id_coop": "nantes4",
+    "id_territoire": "nantes_t0008"
+  },
+  {
+    "id_coop": "nantes4",
+    "id_territoire": "nantes_t0009"
+  },
+  {
+    "id_coop": "nantes4",
+    "id_territoire": "nantes_t0010"
+  },
+  {
+    "id_coop": "nantes4",
+    "id_territoire": "nantes_t0011"
+  },
+  {
+    "id_coop": "nantes4",
+    "id_territoire": "nantes_t0012"
+  },
+  {
+    "id_coop": "nantes5",
+    "id_territoire": "nantes_t0000"
+  },
+  {
+    "id_coop": "nantes5",
+    "id_territoire": "nantes_t0013"
+  },
+  {
+    "id_coop": "nice2",
+    "id_territoire": "nice_t0000"
+  },
+  {
+    "id_coop": "nice2",
+    "id_territoire": "nice_t0001"
+  },
+  {
+    "id_coop": "nice3",
+    "id_territoire": "nice_t0000"
+  },
+  {
+    "id_coop": "nice3",
+    "id_territoire": "nice_t0002"
+  },
+  {
+    "id_coop": "nice3",
+    "id_territoire": "nice_t0003"
+  },
+  {
+    "id_coop": "nice3",
+    "id_territoire": "nice_t0004"
+  },
+  {
+    "id_coop": "orleans1",
+    "id_territoire": "orleans_t0000"
+  },
+  {
+    "id_coop": "orleans1",
+    "id_territoire": "orleans_t0006"
+  },
+  {
+    "id_coop": "orleans2",
+    "id_territoire": "orleans_t0001"
+  },
+  {
+    "id_coop": "orleans2",
+    "id_territoire": "orleans_t0002"
+  },
+  {
+    "id_coop": "orleans2",
+    "id_territoire": "orleans_t0003"
+  },
+  {
+    "id_coop": "orleans3",
+    "id_territoire": "orleans_t0000"
+  },
+  {
+    "id_coop": "orleans3",
+    "id_territoire": "orleans_t0007"
+  },
+  {
+    "id_coop": "orleans3",
+    "id_territoire": "orleans_t0008"
+  },
+  {
+    "id_coop": "orleans4",
+    "id_territoire": "orleans_t0000"
+  },
+  {
+    "id_coop": "orleans4",
+    "id_territoire": "orleans_t0003"
+  },
+  {
+    "id_coop": "orleans4",
+    "id_territoire": "orleans_t0009"
+  },
+  {
+    "id_coop": "orleans5",
+    "id_territoire": "orleans_t0000"
+  },
+  {
+    "id_coop": "orleans5",
+    "id_territoire": "orleans_t0010"
+  },
+  {
+    "id_coop": "orleans6",
+    "id_territoire": "orleans_t0000"
+  },
+  {
+    "id_coop": "orleans6",
+    "id_territoire": "orleans_t0011"
+  },
+  {
+    "id_coop": "orleans7",
+    "id_territoire": "orleans_t0000"
+  },
+  {
+    "id_coop": "orleans7",
+    "id_territoire": "orleans_t0007"
+  },
+  {
+    "id_coop": "orleans7",
+    "id_territoire": "orleans_t0008"
+  },
+  {
+    "id_coop": "orleans7",
+    "id_territoire": "orleans_t0010"
+  },
+  {
+    "id_coop": "orleans7",
+    "id_territoire": "orleans_t0012"
+  },
+  {
+    "id_coop": "orleans8",
+    "id_territoire": "orleans_t0000"
+  },
+  {
+    "id_coop": "orleans8",
+    "id_territoire": "orleans_t0004"
+  },
+  {
+    "id_coop": "orleans8",
+    "id_territoire": "orleans_t0005"
+  },
+  {
+    "id_coop": "paris2",
+    "id_territoire": "paris_t0000"
+  },
+  {
+    "id_coop": "paris2",
+    "id_territoire": "paris_t0001"
+  },
+  {
+    "id_coop": "paris2",
+    "id_territoire": "paris_t0002"
+  },
+  {
+    "id_coop": "paris2",
+    "id_territoire": "paris_t0003"
+  },
+  {
+    "id_coop": "paris3",
+    "id_territoire": "paris_t0000"
+  },
+  {
+    "id_coop": "paris3",
+    "id_territoire": "paris_t0004"
+  },
+  {
+    "id_coop": "paris3",
+    "id_territoire": "paris_t0005"
+  },
+  {
+    "id_coop": "paris3",
+    "id_territoire": "paris_t0003"
+  },
+  {
+    "id_coop": "paris4",
+    "id_territoire": "paris_t0000"
+  },
+  {
+    "id_coop": "paris4",
+    "id_territoire": "paris_t0006"
+  },
+  {
+    "id_coop": "paris4",
+    "id_territoire": "paris_t0007"
+  },
+  {
+    "id_coop": "paris4",
+    "id_territoire": "paris_t0005"
   },
   {
     "id_coop": "polem10",
@@ -762,14 +1802,6 @@
   {
     "id_coop": "polem10",
     "id_territoire": "polem_t0020"
-  },
-  {
-    "id_coop": "polem11",
-    "id_territoire": "polem_t0065"
-  },
-  {
-    "id_coop": "polem11",
-    "id_territoire": "polem_t0109"
   },
   {
     "id_coop": "polem12",
@@ -916,38 +1948,6 @@
     "id_territoire": "polem_t0142"
   },
   {
-    "id_coop": "polem17",
-    "id_territoire": "polem_t0015"
-  },
-  {
-    "id_coop": "polem17",
-    "id_territoire": "polem_t0032"
-  },
-  {
-    "id_coop": "polem17",
-    "id_territoire": "polem_t0044"
-  },
-  {
-    "id_coop": "polem17",
-    "id_territoire": "polem_t0060"
-  },
-  {
-    "id_coop": "polem17",
-    "id_territoire": "polem_t0064"
-  },
-  {
-    "id_coop": "polem17",
-    "id_territoire": "polem_t0072"
-  },
-  {
-    "id_coop": "polem17",
-    "id_territoire": "polem_t0096"
-  },
-  {
-    "id_coop": "polem17",
-    "id_territoire": "polem_t0122"
-  },
-  {
     "id_coop": "polem18",
     "id_territoire": "polem_t0068"
   },
@@ -974,10 +1974,6 @@
   {
     "id_coop": "polem18",
     "id_territoire": "polem_t0130"
-  },
-  {
-    "id_coop": "polem18",
-    "id_territoire": "polem_t0132"
   },
   {
     "id_coop": "polem19",
@@ -1084,10 +2080,6 @@
     "id_territoire": "polem_t0085"
   },
   {
-    "id_coop": "polem23",
-    "id_territoire": "polem_t0134"
-  },
-  {
     "id_coop": "polem24",
     "id_territoire": "polem_t0141"
   },
@@ -1132,6 +2124,98 @@
     "id_territoire": "polem_t0137"
   },
   {
+    "id_coop": "polem27",
+    "id_territoire": "polem_t180"
+  },
+  {
+    "id_coop": "polem27",
+    "id_territoire": "polem_t181"
+  },
+  {
+    "id_coop": "polem27",
+    "id_territoire": "polem_t182"
+  },
+  {
+    "id_coop": "polem28",
+    "id_territoire": "polem_t146"
+  },
+  {
+    "id_coop": "polem28",
+    "id_territoire": "polem_t147"
+  },
+  {
+    "id_coop": "polem28",
+    "id_territoire": "polem_t148"
+  },
+  {
+    "id_coop": "polem28",
+    "id_territoire": "polem_t149"
+  },
+  {
+    "id_coop": "polem28",
+    "id_territoire": "polem_t150"
+  },
+  {
+    "id_coop": "polem28",
+    "id_territoire": "polem_t151"
+  },
+  {
+    "id_coop": "polem28",
+    "id_territoire": "polem_t152"
+  },
+  {
+    "id_coop": "polem28",
+    "id_territoire": "polem_t153"
+  },
+  {
+    "id_coop": "polem28",
+    "id_territoire": "polem_t154"
+  },
+  {
+    "id_coop": "polem29",
+    "id_territoire": "polem_t155"
+  },
+  {
+    "id_coop": "polem29",
+    "id_territoire": "polem_t156"
+  },
+  {
+    "id_coop": "polem29",
+    "id_territoire": "polem_t157"
+  },
+  {
+    "id_coop": "polem29",
+    "id_territoire": "polem_t158"
+  },
+  {
+    "id_coop": "polem29",
+    "id_territoire": "polem_t159"
+  },
+  {
+    "id_coop": "polem29",
+    "id_territoire": "polem_t160"
+  },
+  {
+    "id_coop": "polem29",
+    "id_territoire": "polem_t161"
+  },
+  {
+    "id_coop": "polem29",
+    "id_territoire": "polem_t162"
+  },
+  {
+    "id_coop": "polem29",
+    "id_territoire": "polem_t163"
+  },
+  {
+    "id_coop": "polem29",
+    "id_territoire": "polem_t164"
+  },
+  {
+    "id_coop": "polem29",
+    "id_territoire": "polem_t165"
+  },
+  {
     "id_coop": "polem3",
     "id_territoire": "polem_t0023"
   },
@@ -1156,12 +2240,60 @@
     "id_territoire": "polem_t0128"
   },
   {
-    "id_coop": "polem4",
-    "id_territoire": "polem_t0031"
+    "id_coop": "polem30",
+    "id_territoire": "polem_t166"
   },
   {
-    "id_coop": "polem4",
-    "id_territoire": "polem_t0090"
+    "id_coop": "polem30",
+    "id_territoire": "polem_t167"
+  },
+  {
+    "id_coop": "polem30",
+    "id_territoire": "polem_t168"
+  },
+  {
+    "id_coop": "polem30",
+    "id_territoire": "polem_t169"
+  },
+  {
+    "id_coop": "polem30",
+    "id_territoire": "polem_t170"
+  },
+  {
+    "id_coop": "polem30",
+    "id_territoire": "polem_t171"
+  },
+  {
+    "id_coop": "polem30",
+    "id_territoire": "polem_t172"
+  },
+  {
+    "id_coop": "polem30",
+    "id_territoire": "polem_t173"
+  },
+  {
+    "id_coop": "polem30",
+    "id_territoire": "polem_t174"
+  },
+  {
+    "id_coop": "polem30",
+    "id_territoire": "polem_t175"
+  },
+  {
+    "id_coop": "polem30",
+    "id_territoire": "polem_t179"
+  },
+  {
+    "id_coop": "polem31",
+    "id_territoire": "polem_t176"
+  },
+  {
+    "id_coop": "polem31",
+    "id_territoire": "polem_t177"
+  },
+  {
+    "id_coop": "polem31",
+    "id_territoire": "polem_t178"
   },
   {
     "id_coop": "polem5",
@@ -1260,18 +2392,6 @@
     "id_territoire": "polem_t0127"
   },
   {
-    "id_coop": "polem6",
-    "id_territoire": "polem_t0131"
-  },
-  {
-    "id_coop": "polem6",
-    "id_territoire": "polem_t0133"
-  },
-  {
-    "id_coop": "polem6",
-    "id_territoire": "polem_t0136"
-  },
-  {
     "id_coop": "polem7",
     "id_territoire": "polem_t0005"
   },
@@ -1344,508 +2464,20 @@
     "id_territoire": "polem_t0138"
   },
   {
-    "id_coop": "lyon3",
-    "id_territoire": "lyon_t0000"
+    "id_coop": "rennes1",
+    "id_territoire": "rennes_t0002"
   },
   {
-    "id_coop": "lyon3",
-    "id_territoire": "polem_t0043"
+    "id_coop": "rennes1",
+    "id_territoire": "rennes_t0003"
   },
   {
-    "id_coop": "lyon3",
-    "id_territoire": "polem_t0050"
+    "id_coop": "rennes1",
+    "id_territoire": "rennes_t0004"
   },
   {
-    "id_coop": "lyon3",
-    "id_territoire": "polem_t0073"
-  },
-  {
-    "id_coop": "lyon3",
-    "id_territoire": "polem_t0139"
-  },
-  {
-    "id_coop": "lyon3",
-    "id_territoire": "polem_t0145"
-  },
-  {
-    "id_coop": "lyon4",
-    "id_territoire": "lyon_t0000"
-  },
-  {
-    "id_coop": "lyon4",
-    "id_territoire": "polem_t0043"
-  },
-  {
-    "id_coop": "lyon4",
-    "id_territoire": "polem_t0050"
-  },
-  {
-    "id_coop": "lyon4",
-    "id_territoire": "polem_t0073"
-  },
-  {
-    "id_coop": "lyon4",
-    "id_territoire": "polem_t0139"
-  },
-  {
-    "id_coop": "lyon4",
-    "id_territoire": "polem_t0145"
-  },
-  {
-    "id_coop": "lyon5",
-    "id_territoire": "lyon_t0000"
-  },
-  {
-    "id_coop": "lyon5",
-    "id_territoire": "polem_t0043"
-  },
-  {
-    "id_coop": "lyon5",
-    "id_territoire": "polem_t0050"
-  },
-  {
-    "id_coop": "lyon5",
-    "id_territoire": "polem_t0073"
-  },
-  {
-    "id_coop": "lyon5",
-    "id_territoire": "polem_t0139"
-  },
-  {
-    "id_coop": "lyon5",
-    "id_territoire": "polem_t0145"
-  },
-  {
-    "id_coop": "lyon6",
-    "id_territoire": "lyon_t0000"
-  },
-  {
-    "id_coop": "lyon6",
-    "id_territoire": "polem_t0043"
-  },
-  {
-    "id_coop": "lyon6",
-    "id_territoire": "polem_t0050"
-  },
-  {
-    "id_coop": "lyon6",
-    "id_territoire": "polem_t0073"
-  },
-  {
-    "id_coop": "lyon6",
-    "id_territoire": "polem_t0139"
-  },
-  {
-    "id_coop": "lyon6",
-    "id_territoire": "polem_t0145"
-  },
-  {
-    "id_coop": "lyon9",
-    "id_territoire": "lyon_t0000"
-  },
-  {
-    "id_coop": "lyon9",
-    "id_territoire": "polem_t0043"
-  },
-  {
-    "id_coop": "lyon9",
-    "id_territoire": "polem_t0050"
-  },
-  {
-    "id_coop": "lyon9",
-    "id_territoire": "polem_t0073"
-  },
-  {
-    "id_coop": "lyon9",
-    "id_territoire": "polem_t0139"
-  },
-  {
-    "id_coop": "lyon9",
-    "id_territoire": "polem_t0145"
-  },
-  {
-    "id_coop": "lyon10",
-    "id_territoire": "lyon_t0000"
-  },
-  {
-    "id_coop": "lyon10",
-    "id_territoire": "polem_t0043"
-  },
-  {
-    "id_coop": "lyon10",
-    "id_territoire": "polem_t0050"
-  },
-  {
-    "id_coop": "lyon10",
-    "id_territoire": "polem_t0073"
-  },
-  {
-    "id_coop": "lyon10",
-    "id_territoire": "polem_t0139"
-  },
-  {
-    "id_coop": "lyon10",
-    "id_territoire": "polem_t0145"
-  },
-  {
-    "id_coop": "lyon7",
-    "id_territoire": "lyon_t0000"
-  },
-  {
-    "id_coop": "lyon7",
-    "id_territoire": "lyon_t0001"
-  },
-  {
-    "id_coop": "lyon7",
-    "id_territoire": "lyon_t0002"
-  },
-  {
-    "id_coop": "lyon8",
-    "id_territoire": "lyon_t0000"
-  },
-  {
-    "id_coop": "lyon8",
-    "id_territoire": "lyon_t0003"
-  },
-  {
-    "id_coop": "lyon8",
-    "id_territoire": "lyon_t0004"
-  },
-  {
-    "id_coop": "lyon13",
-    "id_territoire": "lyon_t0000"
-  },
-  {
-    "id_coop": "lyon13",
-    "id_territoire": "lyon_t0005"
-  },
-  {
-    "id_coop": "lyon13",
-    "id_territoire": "lyon_t0006"
-  },
-  {
-    "id_coop": "lyon13",
-    "id_territoire": "lyon_t0007"
-  },
-  {
-    "id_coop": "lyon13",
-    "id_territoire": "lyon_t0008"
-  },
-  {
-    "id_coop": "lyon13",
-    "id_territoire": "lyon_t0009"
-  },
-  {
-    "id_coop": "lyon13",
-    "id_territoire": "lyon_t0010"
-  },
-  {
-    "id_coop": "lyon16",
-    "id_territoire": "lyon_t0000"
-  },
-  {
-    "id_coop": "lyon16",
-    "id_territoire": "lyon_t0012"
-  },
-  {
-    "id_coop": "lyon16",
-    "id_territoire": "lyon_t0013"
-  },
-  {
-    "id_coop": "lyon16",
-    "id_territoire": "lyon_t0014"
-  },
-  {
-    "id_coop": "lyon17",
-    "id_territoire": "lyon_t0000"
-  },
-  {
-    "id_coop": "lyon17",
-    "id_territoire": "lyon_t0015"
-  },
-  {
-    "id_coop": "lyon18",
-    "id_territoire": "lyon_t0000"
-  },
-  {
-    "id_coop": "lyon18",
-    "id_territoire": "lyon_t0021"
-  },
-  {
-    "id_coop": "lyon19",
-    "id_territoire": "lyon_t0000"
-  },
-  {
-    "id_coop": "lyon19",
-    "id_territoire": "lyon_t0021"
-  },
-  {
-    "id_coop": "lyon19",
-    "id_territoire": "lyon_t0020"
-  },
-  {
-    "id_coop": "lyon19",
-    "id_territoire": "lyon_t0022"
-  },
-  {
-    "id_coop": "metz1",
-    "id_territoire": "metz_t0000"
-  },
-  {
-    "id_coop": "metz1",
-    "id_territoire": "metz_t0001"
-  },
-  {
-    "id_coop": "metz1",
-    "id_territoire": "metz_t0002"
-  },
-  {
-    "id_coop": "metz1",
-    "id_territoire": "metz_t0003"
-  },
-  {
-    "id_coop": "metz1",
-    "id_territoire": "metz_t0004"
-  },
-  {
-    "id_coop": "metz1",
-    "id_territoire": "metz_t0005"
-  },
-  {
-    "id_coop": "metz1",
-    "id_territoire": "metz_t0006"
-  },
-  {
-    "id_coop": "metz3",
-    "id_territoire": "metz_t0000"
-  },
-  {
-    "id_coop": "metz3",
-    "id_territoire": "metz_t0007"
-  },
-  {
-    "id_coop": "metz3",
-    "id_territoire": "metz_t0006"
-  },
-  {
-    "id_coop": "metz3",
-    "id_territoire": "metz_t0008"
-  },
-  {
-    "id_coop": "metz3",
-    "id_territoire": "metz_t0009"
-  },
-  {
-    "id_coop": "metz3",
-    "id_territoire": "metz_t0005"
-  },
-  {
-    "id_coop": "metz3",
-    "id_territoire": "metz_t0003"
-  },
-  {
-    "id_coop": "metz4",
-    "id_territoire": "metz_t0000"
-  },
-  {
-    "id_coop": "metz4",
-    "id_territoire": "metz_t0007"
-  },
-  {
-    "id_coop": "metz4",
-    "id_territoire": "metz_t0006"
-  },
-  {
-    "id_coop": "metz4",
-    "id_territoire": "metz_t0008"
-  },
-  {
-    "id_coop": "metz4",
-    "id_territoire": "metz_t0009"
-  },
-  {
-    "id_coop": "metz4",
-    "id_territoire": "metz_t0005"
-  },
-  {
-    "id_coop": "metz4",
-    "id_territoire": "metz_t0003"
-  },
-  {
-    "id_coop": "montpellier1",
-    "id_territoire": "montpellier_t0000"
-  },
-  {
-    "id_coop": "montpellier1",
-    "id_territoire": "montpellier_t0001"
-  },
-  {
-    "id_coop": "montpellier1",
-    "id_territoire": "montpellier_t0002"
-  },
-  {
-    "id_coop": "montpellier1",
-    "id_territoire": "montpellier_t0003"
-  },
-  {
-    "id_coop": "montpellier1",
-    "id_territoire": "montpellier_t0004"
-  },
-  {
-    "id_coop": "montpellier1",
-    "id_territoire": "montpellier_t0005"
-  },
-  {
-    "id_coop": "montpellier2",
-    "id_territoire": "montpellier_t0000"
-  },
-  {
-    "id_coop": "montpellier2",
-    "id_territoire": "montpellier_t0001"
-  },
-  {
-    "id_coop": "montpellier2",
-    "id_territoire": "montpellier_t0002"
-  },
-  {
-    "id_coop": "montpellier2",
-    "id_territoire": "montpellier_t0003"
-  },
-  {
-    "id_coop": "montpellier2",
-    "id_territoire": "montpellier_t0004"
-  },
-  {
-    "id_coop": "montpellier2",
-    "id_territoire": "montpellier_t0005"
-  },
-  {
-    "id_coop": "montpellier3",
-    "id_territoire": "montpellier_t0000"
-  },
-  {
-    "id_coop": "montpellier3",
-    "id_territoire": "montpellier_t0001"
-  },
-  {
-    "id_coop": "montpellier3",
-    "id_territoire": "montpellier_t0002"
-  },
-  {
-    "id_coop": "montpellier3",
-    "id_territoire": "montpellier_t0003"
-  },
-  {
-    "id_coop": "montpellier3",
-    "id_territoire": "montpellier_t0004"
-  },
-  {
-    "id_coop": "montpellier3",
-    "id_territoire": "montpellier_t0005"
-  },
-  {
-    "id_coop": "montpellier4",
-    "id_territoire": "montpellier_t0000"
-  },
-  {
-    "id_coop": "montpellier4",
-    "id_territoire": "montpellier_t0001"
-  },
-  {
-    "id_coop": "montpellier4",
-    "id_territoire": "montpellier_t0002"
-  },
-  {
-    "id_coop": "montpellier4",
-    "id_territoire": "montpellier_t0003"
-  },
-  {
-    "id_coop": "montpellier4",
-    "id_territoire": "montpellier_t0004"
-  },
-  {
-    "id_coop": "montpellier4",
-    "id_territoire": "montpellier_t0005"
-  },
-  {
-    "id_coop": "montpellier5",
-    "id_territoire": "montpellier_t0000"
-  },
-  {
-    "id_coop": "montpellier5",
-    "id_territoire": "montpellier_t0001"
-  },
-  {
-    "id_coop": "montpellier5",
-    "id_territoire": "montpellier_t0002"
-  },
-  {
-    "id_coop": "montpellier5",
-    "id_territoire": "montpellier_t0003"
-  },
-  {
-    "id_coop": "montpellier5",
-    "id_territoire": "montpellier_t0004"
-  },
-  {
-    "id_coop": "montpellier5",
-    "id_territoire": "montpellier_t0005"
-  },
-  {
-    "id_coop": "montpellier6",
-    "id_territoire": "montpellier_t0000"
-  },
-  {
-    "id_coop": "montpellier6",
-    "id_territoire": "montpellier_t0006"
-  },
-  {
-    "id_coop": "montpellier8",
-    "id_territoire": "montpellier_t0000"
-  },
-  {
-    "id_coop": "montpellier8",
-    "id_territoire": "montpellier_t0007"
-  },
-  {
-    "id_coop": "montpellier8",
-    "id_territoire": "montpellier_t0008"
-  },
-  {
-    "id_coop": "montpellier8",
-    "id_territoire": "montpellier_t0003"
-  },
-  {
-    "id_coop": "montpellier9",
-    "id_territoire": "montpellier_t0000"
-  },
-  {
-    "id_coop": "montpellier9",
-    "id_territoire": "montpellier_t0009"
-  },
-  {
-    "id_coop": "orleans2",
-    "id_territoire": "orleans_t0001"
-  },
-  {
-    "id_coop": "orleans2",
-    "id_territoire": "orleans_t0002"
-  },
-  {
-    "id_coop": "orleans2",
-    "id_territoire": "orleans_t0003"
-  },
-  {
-    "id_coop": "orleans8",
-    "id_territoire": "orleans_t0000"
-  },
-  {
-    "id_coop": "orleans8",
-    "id_territoire": "orleans_t0004"
-  },
-  {
-    "id_coop": "orleans8",
-    "id_territoire": "orleans_t0005"
+    "id_coop": "rennes1",
+    "id_territoire": "rennes_t0000"
   },
   {
     "id_coop": "rennes2",
@@ -1853,6 +2485,18 @@
   },
   {
     "id_coop": "rennes2",
+    "id_territoire": "rennes_t0001"
+  },
+  {
+    "id_coop": "rennes4",
+    "id_territoire": "rennes_t0000"
+  },
+  {
+    "id_coop": "rennes4",
+    "id_territoire": "nantes_t0000"
+  },
+  {
+    "id_coop": "rennes4",
     "id_territoire": "rennes_t0001"
   },
   {
@@ -1888,28 +2532,12 @@
     "id_territoire": "rouen_t0002"
   },
   {
-    "id_coop": "stetienne3",
+    "id_coop": "stetienne1",
     "id_territoire": "stetienne_t0000"
   },
   {
-    "id_coop": "stetienne3",
-    "id_territoire": "stetienne_t0001"
-  },
-  {
-    "id_coop": "stetienne8",
-    "id_territoire": "stetienne_t0000"
-  },
-  {
-    "id_coop": "stetienne8",
-    "id_territoire": "stetienne_t0001"
-  },
-  {
-    "id_coop": "stetienne9",
-    "id_territoire": "stetienne_t0000"
-  },
-  {
-    "id_coop": "stetienne9",
-    "id_territoire": "stetienne_t0001"
+    "id_coop": "stetienne1",
+    "id_territoire": "stetienne_t0002"
   },
   {
     "id_coop": "stetienne10",
@@ -1917,6 +2545,14 @@
   },
   {
     "id_coop": "stetienne10",
+    "id_territoire": "stetienne_t0002"
+  },
+  {
+    "id_coop": "stetienne11",
+    "id_territoire": "stetienne_t0000"
+  },
+  {
+    "id_coop": "stetienne11",
     "id_territoire": "stetienne_t0002"
   },
   {
@@ -1928,12 +2564,108 @@
     "id_territoire": "stetienne_t0001"
   },
   {
+    "id_coop": "stetienne14",
+    "id_territoire": "stetienne_t0000"
+  },
+  {
+    "id_coop": "stetienne14",
+    "id_territoire": "polem_t0043"
+  },
+  {
+    "id_coop": "stetienne14",
+    "id_territoire": "lyon_t0004"
+  },
+  {
+    "id_coop": "stetienne2",
+    "id_territoire": "stetienne_t0000"
+  },
+  {
+    "id_coop": "stetienne2",
+    "id_territoire": "stetienne_t0001"
+  },
+  {
+    "id_coop": "stetienne3",
+    "id_territoire": "stetienne_t0000"
+  },
+  {
+    "id_coop": "stetienne3",
+    "id_territoire": "stetienne_t0001"
+  },
+  {
+    "id_coop": "stetienne3",
+    "id_territoire": "lyon_t0012"
+  },
+  {
+    "id_coop": "stetienne3",
+    "id_territoire": "stetienne_t0003"
+  },
+  {
+    "id_coop": "stetienne3",
+    "id_territoire": "stetienne_t0004"
+  },
+  {
+    "id_coop": "stetienne6",
+    "id_territoire": "stetienne_t0000"
+  },
+  {
+    "id_coop": "stetienne6",
+    "id_territoire": "stetienne_t0002"
+  },
+  {
+    "id_coop": "stetienne6",
+    "id_territoire": "stetienne_t0003"
+  },
+  {
+    "id_coop": "stetienne6",
+    "id_territoire": "stetienne_t0005"
+  },
+  {
+    "id_coop": "stetienne7",
+    "id_territoire": "stetienne_t0000"
+  },
+  {
+    "id_coop": "stetienne7",
+    "id_territoire": "stetienne_t0002"
+  },
+  {
+    "id_coop": "stetienne8",
+    "id_territoire": "stetienne_t0000"
+  },
+  {
+    "id_coop": "stetienne8",
+    "id_territoire": "stetienne_t0001"
+  },
+  {
+    "id_coop": "stetienne8",
+    "id_territoire": "stetienne_t0005"
+  },
+  {
+    "id_coop": "stetienne8",
+    "id_territoire": "stetienne_t0006"
+  },
+  {
+    "id_coop": "stetienne8",
+    "id_territoire": "lyon_t0004"
+  },
+  {
+    "id_coop": "stetienne9",
+    "id_territoire": "stetienne_t0000"
+  },
+  {
+    "id_coop": "stetienne9",
+    "id_territoire": "stetienne_t0001"
+  },
+  {
     "id_coop": "strasbourg1",
     "id_territoire": "strasbourg_t0000"
   },
   {
     "id_coop": "strasbourg1",
     "id_territoire": "strasbourg_t0001"
+  },
+  {
+    "id_coop": "strasbourg1",
+    "id_territoire": "strasbourg_t0002"
   },
   {
     "id_coop": "strasbourg2",
@@ -1944,12 +2676,20 @@
     "id_territoire": "strasbourg_t0001"
   },
   {
+    "id_coop": "strasbourg2",
+    "id_territoire": "strasbourg_t0002"
+  },
+  {
     "id_coop": "strasbourg3",
     "id_territoire": "strasbourg_t0000"
   },
   {
     "id_coop": "strasbourg3",
     "id_territoire": "strasbourg_t0001"
+  },
+  {
+    "id_coop": "strasbourg3",
+    "id_territoire": "strasbourg_t0002"
   },
   {
     "id_coop": "strasbourg4",
@@ -1960,12 +2700,20 @@
     "id_territoire": "strasbourg_t0001"
   },
   {
+    "id_coop": "strasbourg4",
+    "id_territoire": "strasbourg_t0002"
+  },
+  {
     "id_coop": "strasbourg5",
     "id_territoire": "strasbourg_t0000"
   },
   {
     "id_coop": "strasbourg5",
     "id_territoire": "strasbourg_t0001"
+  },
+  {
+    "id_coop": "strasbourg5",
+    "id_territoire": "strasbourg_t0002"
   },
   {
     "id_coop": "toulon1",
@@ -1982,6 +2730,50 @@
   {
     "id_coop": "toulon1",
     "id_territoire": "toulon_t0000"
+  },
+  {
+    "id_coop": "toulouse1",
+    "id_territoire": "toulouse_t0000"
+  },
+  {
+    "id_coop": "toulouse1",
+    "id_territoire": "toulouse_t0005"
+  },
+  {
+    "id_coop": "toulouse1",
+    "id_territoire": "toulouse_t0006"
+  },
+  {
+    "id_coop": "toulouse1",
+    "id_territoire": "toulouse_t0007"
+  },
+  {
+    "id_coop": "toulouse1",
+    "id_territoire": "toulouse_t0008"
+  },
+  {
+    "id_coop": "toulouse1",
+    "id_territoire": "toulouse_t0009"
+  },
+  {
+    "id_coop": "toulouse1",
+    "id_territoire": "toulouse_t0010"
+  },
+  {
+    "id_coop": "toulouse1",
+    "id_territoire": "toulouse_t0011"
+  },
+  {
+    "id_coop": "toulouse1",
+    "id_territoire": "toulouse_t0012"
+  },
+  {
+    "id_coop": "toulouse1",
+    "id_territoire": "toulouse_t0013"
+  },
+  {
+    "id_coop": "toulouse1",
+    "id_territoire": "toulouse_t0002"
   },
   {
     "id_coop": "toulouse2",
@@ -2038,6 +2830,14 @@
   {
     "id_coop": "tours1",
     "id_territoire": "tours_t0001"
+  },
+  {
+    "id_coop": "tours10",
+    "id_territoire": "tours_t0000"
+  },
+  {
+    "id_coop": "tours10",
+    "id_territoire": "tours_t0010"
   },
   {
     "id_coop": "tours2",
@@ -2102,13 +2902,5 @@
   {
     "id_coop": "tours9",
     "id_territoire": "tours_t0009"
-  },
-  {
-    "id_coop": "tours10",
-    "id_territoire": "tours_t0000"
-  },
-  {
-    "id_coop": "tours10",
-    "id_territoire": "tours_t0010"
   }
 ]
