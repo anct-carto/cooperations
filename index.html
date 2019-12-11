@@ -33,7 +33,7 @@
 					<div class="tip "id="tip1">Accueil coopérations</div>
 				<!--<li onmouseover="document.getElementById('tip2').style.display = 'block'" onmouseout="document.getElementById('tip2').style.display = 'none'"><a href="https://cartotheque.cget.gouv.fr/cartes" id="cartes_ref" role="tab" target="_blank" title="Cartes de référence" class="onglets hyperlien"><i style="vertical-align:middle;" class="fa fa-map"></i></a></li>
 					<div class="tip "id="tip2">Cartes de référence</div>-->
-				<li onmouseover="document.getElementById('tip3').style.display = 'block'" onmouseout="document.getElementById('tip3').style.display = 'none'"><a id="info" role="tab" target="_blank" title="infos" class="onglets hyperlien"><i style="vertical-align:middle;" class="fa fa-question"></i></a></li>
+				<li onmouseover="document.getElementById('tip3').style.display = 'block'" onmouseout="document.getElementById('tip3').style.display = 'none'"><a id="info" role="tab" target="_blank" title="infos" class="onglets"><i style="vertical-align:middle;" class="fa fa-question"></i></a></li>
 					<div class="tip "id="tip3">En savoir plus</div>
 				<!--<li onmouseover="document.getElementById('tip4').style.display = 'block'" onmouseout="document.getElementById('tip4').style.display = 'none'"><a href="https://www.youtube.com" id="videos" role="tab" target="_blank" title="témoignages" class="onglets hyperlien"><i style="vertical-align:middle;" class="fa fa-play-circle"></i></a></li>
 					<div class="tip "id="tip4">Témoignages vidéos</div>
@@ -128,7 +128,7 @@
 						</div>
 						
 						<div class="divTableCell" id="case_monographie">
-								<h3 class="divTableRow">Télécharger la monographie</h3>
+								<h3 class="divTableRow">Documents ressources</h3>
 								<div class="divTableRow description" id="monographie"></div>
 						</div>
 						
@@ -244,12 +244,9 @@
 		
 		//une couleur unique pour chaque territoire
 		var couleur;
-		var hue = '';
-		function getColor(type) {
-			if (type == "territoire") {hue = 'blue';}
-			else if (type == "cooperation") {hue = 'orange';}
+		function getColor() {
 			couleur = randomColor({ 
-				hue : hue,
+				hue : 'orange',
 				luminosity: 'bright', //bright light dark
 				format: 'hex' // rgb rgba rgbArray hsl hsla hslArray hex
 				});
@@ -366,7 +363,7 @@
 		//Territoires
 		Territoires = L.geoJSON(JS_territoires, {
 			//filter: function(feature, layer) {return feature.properties.type=="départemen"},
-			style: function(feature){return { color: "#006099", weight: 0.5, opacity: 0.5, fillOpacity: 0, pane: "territoires", interactive:false, fillColor: getColor("territoire")};},
+			style: function(feature){return { color: "#006099", weight: 0.3, opacity: 0.5, fillOpacity: 0, pane: "territoires", interactive:false};},
 			onEachFeature: function(feature, layer) {		
 				layer.bindTooltip(feature.properties.nom, {className: 'TooltipsTerr Tooltips', direction: "center", sticky:true});
 				layer.on('click', function(e) {	
@@ -391,7 +388,7 @@
 		
 		//Cooperations
 		Cooperations = L.geoJSON(JS_cooperations, {
-			style: function(feature){return { color: getColor("cooperation"), weight: 2.5, opacity: 1, fillOpacity: 1, pane: "cooperations", fillColor: getColor("cooperation")};},
+			style: function(feature){return { color: getColor(), weight: 2, opacity: 1, fillOpacity: 0.9, pane: "cooperations", fillColor: getColor()};},
 			onEachFeature: function(feature, layer) {		
 				layer.bindTooltip(feature.properties.nom, {className: 'TooltipsCoop Tooltips', direction: "right", sticky:true});
 				layer.on('click', function(e) {	
@@ -480,7 +477,7 @@
 		function geometrieCible(e, terrcoop){ 
 			if(geomCib) {map.removeLayer(geomCib);}
 			var fillColor;
-			if (terrcoop == "territoire"){fillColor="#00c6ff"} else if (terrcoop == "cooperation"){fillColor="#ffe500"};
+			if (terrcoop == "territoire"){fillColor="#309fff"} else if (terrcoop == "cooperation"){fillColor="#ffe500"};
 			geomCib = L.polygon(e, {interactive:false, opacity: 1, fillOpacity: 0.8, fillColor: fillColor, weight: 1, color: '#333333', pane: "geomCible2"}).addTo(map);
 		}
 		
@@ -488,7 +485,7 @@
 		function geometrieCibleHover(e, type, terrcoop, nom){ 
 			if(geomCibHover) {map.removeLayer(geomCibHover);}
 			var fillColor; var Color
-			if (terrcoop == "territoire"){fillColor="#00c6ff"; Color= "#006099"; tooltipClass="TooltipsTerr";} else if (terrcoop == "cooperation"){fillColor="yellow"; Color="orange"; tooltipClass="TooltipsCoop";}
+			if (terrcoop == "territoire"){fillColor="#309fff"; Color= "#006099"; tooltipClass="TooltipsTerr";} else if (terrcoop == "cooperation"){fillColor="yellow"; Color="orange"; tooltipClass="TooltipsCoop";}
 			if (type == 'objet'){geomCibHover = L.polygon(e._latlngs, {fillOpacity: 1, fillColor: fillColor, interactive:false, color: Color,pane: "geomCible", weight:3}).addTo(map);}
 			else if (type == 'xy'){ geomCibHover = L.polygon(e, {fillOpacity: 1, fillColor: fillColor, interactive:false, color: Color ,pane: "geomCible", weight:3}).addTo(map);}
 			//if(nom){geomCibHover.bindTooltip(nom, {className: 'TooltipSelect', direction: "center"}).openTooltip();}
@@ -572,8 +569,8 @@
 				document.getElementById('thematiques').innerHTML = jointure(e, 'terr-coop' ,"thematique");
 				document.getElementById('modalite').innerHTML = jointure(e, 'terr-coop' ,"modalite");
 				
-				if (jointure(e, 'terr-coop' ,"monographie")!== "non"){
-					document.getElementById('monographie').innerHTML = jointure(e, 'terr-coop' ,"monographie");
+				if (jointure(e, 'terr-coop' ,"monographie")== "monographie"){
+					document.getElementById('monographie').innerHTML = "<a href='docs/CGET_monographie_"+e+".pdf' class='hyperlien' target='_blank' >&rarr; Télécharger la monographie</a>";
 					document.getElementById('case_monographie').style.display = "block";
 					}
 				else { document.getElementById('case_monographie').style.display = "none"; }
@@ -707,7 +704,7 @@
 						else if (champ == "objectif"){resultat = layer.feature.properties.objectif}
 						else if (champ == "thematique"){resultat = layer.feature.properties.thematique}	
 						else if (champ == "modalite"){resultat = layer.feature.properties.modalite}
-						//else if (champ == "monographie"){resultat = layer.feature.properties.monographie}
+						else if (champ == "monographie"){resultat = layer.feature.properties.monographie}
 					}
 				});
 			}

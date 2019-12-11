@@ -74,10 +74,6 @@ h3{
 .leaflet-left {
 	left: 0;
 	}	
-	
-.fas {
-  color : white;
-}
 
 .description {
     font-size: 1em;
@@ -86,11 +82,11 @@ h3{
 }
 
 .cooperation { 
-    color: #a44317;
+    color: #af4d00;
 }
 
 .territoire { 
-    color: #00004c;
+    color: #006099;
 }
 	
 #sources {
@@ -134,7 +130,7 @@ h3{
 	}
 
 .TooltipsCoop {
-	background-color: #c66700;
+	background-color: #af4d00;
 	}
 
 .bas {
@@ -165,7 +161,7 @@ h3{
 	}
 	
 .onglets{
-	background-color: #428e9b;
+	background-color: #84b6be;
 	color: #c5dcdd;
 }
 
