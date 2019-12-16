@@ -732,6 +732,7 @@
 		function retourAcceuil () {
 			resetView();
 			resetMap ();
+			if(marker) {map.removeLayer(marker);}
 			if(geomCib) {map.removeLayer(geomCib);}
 			document.getElementById('fiche_territoire').style.display = "none";
 			document.getElementById('defaut').style.display = "block";
@@ -756,6 +757,7 @@
 		
 		//Action au clic sur la carte
 		map.on('click', function(e) { 
+			if(marker) {map.removeLayer(marker);}
 			if(geomCib) {map.removeLayer(geomCib);}
 			if(geomCibHover) {map.removeLayer(geomCibHover);}
 			polylineCoopHeavy.clearLayers();
@@ -834,6 +836,7 @@
 		});
 		
 		searchControl.on('search:locationfound', function(e) {
+			if(marker) {map.removeLayer(marker);}
 			marker = new L.Marker(e.latlng, {icon: myIcon, pane: "lines"}).addTo(map);
 			var adaptedZoom = 9;
 			if (e.layer.feature.properties.layer == "departement"){adaptedZoom = 9;}
