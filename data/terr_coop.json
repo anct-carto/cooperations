@@ -76,34 +76,6 @@
     "id_territoire": "bordeaux_t0011"
   },
   {
-    "id_coop": "brest1",
-    "id_territoire": "brest_t0000"
-  },
-  {
-    "id_coop": "brest1",
-    "id_territoire": "brest_t0001"
-  },
-  {
-    "id_coop": "brest1",
-    "id_territoire": "brest_t0002"
-  },
-  {
-    "id_coop": "brest1",
-    "id_territoire": "brest_t0003"
-  },
-  {
-    "id_coop": "brest1",
-    "id_territoire": "brest_t0004"
-  },
-  {
-    "id_coop": "brest1",
-    "id_territoire": "brest_t0005"
-  },
-  {
-    "id_coop": "brest1",
-    "id_territoire": "brest_t0006"
-  },
-  {
     "id_coop": "brest2",
     "id_territoire": "brest_t0007"
   },
@@ -282,50 +254,6 @@
   {
     "id_coop": "clermont3",
     "id_territoire": "clermont_t0006"
-  },
-  {
-    "id_coop": "clermont4",
-    "id_territoire": "clermont_t0000"
-  },
-  {
-    "id_coop": "clermont4",
-    "id_territoire": "clermont_t0007"
-  },
-  {
-    "id_coop": "clermont4",
-    "id_territoire": "clermont_t0008"
-  },
-  {
-    "id_coop": "clermont4",
-    "id_territoire": "clermont_t0003"
-  },
-  {
-    "id_coop": "clermont4",
-    "id_territoire": "clermont_t0009"
-  },
-  {
-    "id_coop": "clermont4",
-    "id_territoire": "clermont_t0002"
-  },
-  {
-    "id_coop": "clermont4",
-    "id_territoire": "clermont_t0004"
-  },
-  {
-    "id_coop": "clermont4",
-    "id_territoire": "clermont_t0010"
-  },
-  {
-    "id_coop": "clermont4",
-    "id_territoire": "clermont_t0011"
-  },
-  {
-    "id_coop": "clermont4",
-    "id_territoire": "clermont_t0012"
-  },
-  {
-    "id_coop": "clermont4",
-    "id_territoire": "clermont_t0013"
   },
   {
     "id_coop": "clermont5",
@@ -1500,58 +1428,6 @@
     "id_territoire": "nancy_t0012"
   },
   {
-    "id_coop": "nancy6",
-    "id_territoire": "nancy_t0000"
-  },
-  {
-    "id_coop": "nancy6",
-    "id_territoire": "nancy_t0001"
-  },
-  {
-    "id_coop": "nancy6",
-    "id_territoire": "nancy_t0002"
-  },
-  {
-    "id_coop": "nancy6",
-    "id_territoire": "nancy_t0003"
-  },
-  {
-    "id_coop": "nancy6",
-    "id_territoire": "nancy_t0004"
-  },
-  {
-    "id_coop": "nancy6",
-    "id_territoire": "nancy_t0005"
-  },
-  {
-    "id_coop": "nancy6",
-    "id_territoire": "nancy_t0006"
-  },
-  {
-    "id_coop": "nancy6",
-    "id_territoire": "nancy_t0007"
-  },
-  {
-    "id_coop": "nancy6",
-    "id_territoire": "nancy_t0008"
-  },
-  {
-    "id_coop": "nancy6",
-    "id_territoire": "nancy_t0009"
-  },
-  {
-    "id_coop": "nancy6",
-    "id_territoire": "nancy_t0010"
-  },
-  {
-    "id_coop": "nancy6",
-    "id_territoire": "nancy_t0011"
-  },
-  {
-    "id_coop": "nancy6",
-    "id_territoire": "nancy_t0012"
-  },
-  {
     "id_coop": "nantes1",
     "id_territoire": "nantes_t0000"
   },
@@ -2500,14 +2376,6 @@
     "id_territoire": "rennes_t0001"
   },
   {
-    "id_coop": "rouen1",
-    "id_territoire": "rouen_t0000"
-  },
-  {
-    "id_coop": "rouen1",
-    "id_territoire": "rouen_t0001"
-  },
-  {
     "id_coop": "rouen2",
     "id_territoire": "rouen_t0000"
   },
@@ -2902,5 +2770,17 @@
   {
     "id_coop": "tours9",
     "id_territoire": "tours_t0009"
+  },
+  {
+    "id_coop": "autre1",
+    "id_territoire": "toulouse_t0001"
+  },
+  {
+    "id_coop": "autre1",
+    "id_territoire": "autre_t0001"
+  },
+  {
+    "id_coop": "autre1",
+    "id_territoire": "autre_t0002"
   }
 ]
